@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <!-- cleartextTrafficPermitted = TRUE means denies from insecure source -->
+    <!-- cleartextTrafficPermitted = FALSE means allows from insecure source -->
+    <base-config cleartextTrafficPermitted="true">
+        <!--&lt;!&ndash; Trust anchors allows both HTTP & HTTPS requests &ndash;&gt;-->
+        <!--<trust-anchors>-->
+            <!--<certificates src="system" />-->
+        <!--</trust-anchors>-->
+    </base-config>
+    <!--<domain-config cleartextTrafficPermitted="false">-->
+    <!--<domain includeSubdomains="true">fma-mssrf.org</domain>-->
+    <!--</domain-config>-->
+</network-security-config>

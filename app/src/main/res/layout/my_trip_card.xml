@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dimen_card_height"
+    android:layout_marginBottom="@dimen/dimen_5dp"
+    android:layout_marginTop="@dimen/dimen_card_margin"
+    app:cardBackgroundColor="@color/white">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/dimen_3dp"
+        android:background="@drawable/border">
+
+        <com.android.volley.toolbox.NetworkImageView
+            android:id="@+id/map"
+            android:layout_width="@dimen/dimen_map_width"
+            android:layout_height="@dimen/dimen_map_height"
+            android:layout_centerVertical="true"
+            android:src="@drawable/map_example" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dimen_4dp"
+            android:layout_toLeftOf="@+id/risk_layout"
+            android:layout_toRightOf="@+id/map">
+
+            <com.tnedicca.routewise.views.CustomTextView
+                android:id="@+id/trip_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="@dimen/dimen_trip_date_marginLeft"
+                android:layout_marginTop="@dimen/dimen_trip_date_marginTop"
+                android:text="time stamp"
+                android:textColor="@color/battleshipGrey"
+                android:textSize="@dimen/dimen_trip_date_textsize"
+                app:face="@string/font_malgun_semi_light" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true">
+
+                <RelativeLayout
+                    android:id="@+id/start_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/start_dot"
+                        android:layout_width="@dimen/dimen_dot_width"
+                        android:layout_height="@dimen/dimen_dot_height"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/dimen_start_marginLeft"
+                        android:layout_marginRight="@dimen/dimen_start_marginRight"
+                        android:src="@drawable/ic_startbullet" />
+
+                    <com.tnedicca.routewise.views.CustomTextView
+                        android:id="@+id/start_point"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/start_dot"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="start point"
+                        android:textColor="@color/nearBlack"
+                        android:textSize="@dimen/dimen_start_point_textsize"
+                        app:face="@string/font_malgun_semi_light" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/start_layout">
+
+                    <ImageView
+                        android:id="@+id/end_dot"
+                        android:layout_width="@dimen/dimen_dot_width"
+                        android:layout_height="@dimen/dimen_dot_height"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/dimen_end_marginLeft"
+                        android:layout_marginRight="@dimen/dimen_end_marginRight"
+                        android:src="@drawable/ic_endbullet" />
+
+                    <com.tnedicca.routewise.views.CustomTextView
+                        android:id="@+id/end_point"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/end_dot"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="end point"
+                        android:textColor="@color/nearBlack"
+                        android:textSize="@dimen/dimen_end_point_textsize"
+                        app:face="@string/font_malgun_semi_light" />
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <com.tnedicca.routewise.views.CustomTextView
+                android:id="@+id/distance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/dimen_distance_marginBottom"
+                android:layout_marginLeft="@dimen/dimen_distance_marginLeft"
+                android:text="distance"
+                android:textColor="@color/battleshipGrey"
+                android:textSize="@dimen/dimen_distance_textsize"
+                app:face="@string/font_malgun_semi_light" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/risk_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true">
+
+            <com.tnedicca.routewise.views.CustomTextView
+                android:id="@+id/risk_score_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dimen_risk_score_marginTop"
+                android:text="@string/risk_score_text"
+                android:textColor="@color/battleshipGrey"
+                android:textSize="@dimen/dimen_risk_score_textsize"
+                app:face="@string/font_malgun_semi_light" />
+
+            <com.tnedicca.routewise.views.CustomTextView
+                android:id="@+id/risk_score"
+                android:layout_width="@dimen/dimen_risk_score_width"
+                android:layout_height="@dimen/dimen_risk_score_height"
+                android:layout_centerInParent="true"
+                android:background="@drawable/risk_score_circle"
+                android:gravity="center"
+                android:text="0.0"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/dimen_risk_score_textsize"
+                app:face="@string/font_malgun_bold" />
+
+            <ImageView
+                android:id="@+id/down_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/dimen_down_arrow_marginBottom"
+                android:src="@drawable/ic_downarrow" />
+        </RelativeLayout>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

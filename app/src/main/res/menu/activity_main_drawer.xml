@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/menu_dashboard"
+            android:title="@string/menu_dashboard" />
+        <item
+            android:id="@+id/menu_my_trips"
+            android:title="@string/menu_my_trips" />
+        <item
+            android:id="@+id/menu_plan_trip"
+            android:title="@string/menu_plan_trip" />
+        <item
+            android:id="@+id/menu_insurance"
+            android:title="@string/menu_insurance" />
+        <item
+            android:id="@+id/menu_settings"
+            android:title="@string/menu_settings" />
+        <item
+            android:id="@+id/menu_help"
+            android:title="@string/menu_help" />
+        <item
+            android:id="@+id/menu_send_logs"
+            android:title="@string/menu_send_logs" />
+        <item
+            android:id="@+id/menu_logout"
+            android:title="@string/menu_logout" />
+        <item
+            android:id="@+id/menu_delete"
+            android:title="@string/menu_delete" />
+
+    </group>
+
+</menu>

@@ -1,0 +1,278 @@
+<resources>
+    <string name="app_name">RouteWise</string>
+    <string name="ok">OK</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="reset_text1">For verification we will send you a code to authorize your password reset request.</string>
+    <string name="reset_text2">Please choose a contact method to receive the authorization code.</string>
+
+    <!--GeoFence fields-->
+    <string name="geo_fence_enter">Fence Entered</string>
+    <string name="geo_fence_exit">Fence Exited</string>
+    <string name="geo_fence_transition">Fence Transition</string>
+
+    <!--Login fields-->
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="log_in">Log In</string>
+    <string name="my_trips">My Trips</string>
+    <string name="plan_trip">Plan a Trip</string>
+    <string name="log_out">Log Out</string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="keep_me_logged_in">Keep Me Logged In</string>
+    <string name="tnedicca">TNEDICCA<sup><small>®</small></sup></string>
+    <string name="registered_mark"><sup><small>®</small></sup></string>
+    <string name="login_error">Incorrect Login or Password</string>
+    <string name="invalid_email_error">Invalid Email</string>
+    <string name="user_unavailable">Email id not registered</string>
+    <string name="activation_pending">Activation Pending</string>
+    <string name="user_unsubscribed">Unsubscribed from the services</string>
+    <string name="login_failed">Login Failed</string>
+    <string name="wrong_password">Invalid password</string>
+
+    <!--Info fields-->
+    <string name="info_title1">Route Risk are determined by the following factors:</string>
+    <string name="info_factor1">• Choice of Routes</string>
+    <string name="info_factor2">• Time of the Day</string>
+    <string name="info_factor3">• Day of the Week</string>
+    <string name="info_factor4">• Month</string>
+    <string name="info_factor5">• Weather</string>
+
+    <!--Password Rules-->
+    <string name="pass_rule1">• Minimum of 8 characters</string>
+    <string name="pass_rule2">• At least 1 number</string>
+    <string name="pass_rule3">• At least 1 uppercase</string>
+    <string name="pass_rule4">• At least 1 special character</string>
+
+    <string name="info_title2">Scores reset every 180 days</string>
+    <string name="info_title3">Tips to improve your driving score:</string>
+    <string name="info_tips1">Use the Plan a Trip feature to select safer route choices</string>
+    <string name="info_tips2">Use a suggest a safer Route feature to get instant feedback on safer choices</string>
+    <string name="info_tips3">Avoid Texting while driving</string>
+    <string name="info_tips4">Maintain safe distance with other vehicles</string>
+    <string name="info_tips5">Avoid speeding</string>
+
+    <!--Menu fields-->
+    <string name="menu_dashboard">Dashboard</string>
+    <string name="menu_my_trips">My Trips</string>
+    <string name="menu_plan_trip">Plan a Trip</string>
+    <string name="menu_insurance">Insurance Quote</string>
+    <string name="menu_settings">Settings</string>
+    <string name="menu_help">Help</string>
+    <string name="menu_send_logs">Send Logs</string>
+    <string name="menu_logout">Logout</string>
+    <string name="menu_delete">Delete Account</string>
+
+    <!--Detailed trip-->
+    <string name="driver_of_trip">I am the driver for this trip</string>
+    <string name="suggest_safe_route">Suggest Safe Route</string>
+
+    <!--Settings fields-->
+    <string name="settings_title">SETTINGS</string>
+    <string name="tracking_enabled_text">Tracking Enabled</string>
+    <string name="auto_enable_tracking_in">Auto Enable Tracking In:</string>
+    <string name="days">Days</string>
+    <string name="hours">Hours</string>
+    <string name="minutes">Minutes</string>
+    <string name="within_secs_text">within second(s) :</string>
+    <string name="data_uploads_use">Data Uploads Use:</string>
+    <string name="cellular_only_text">Cellular Only</string>
+    <string name="wifi_only_text">Wifi Only</string>
+    <string name="both_text">Both</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="save_log">Save Log</string>
+
+    <!--Terms and Condition fields-->
+    <string name="login">LOGIN</string>
+    <string name="forgot">FORGOT PASSWORD</string>
+    <string name="new_password">NEW PASSWORD</string>
+    <string name="registration">REGISTRATION</string>
+    <string name="info">SCORES EXPLAINED</string>
+    <string name="terms_and_condition">TERMS &amp; CONDITIONS</string>
+    <string name="decline">Decline</string>
+    <string name="accept">Accept</string>
+    <string name="terms_and_condition_text">Please read this document in its entirety prior to use of the product and its features:\n\nThe following End-User License Agreement is a legal agreement between (A) the user and (B) GLOBAL TRAFFIC ACCIDENT REDUCTION INC., an Ohio-based corporation operating as TNEDICCA® (and hereby referred to as such) that governs the installation, functionality, and use of this Software Product.\n\nBy selecting “Agree” or by taking any further action to install and/or use this Software Product (named RouteWise and hereby referred to as The Application), you represent that you are of the legal majority age within your state of residence, and you further agree to be bound by the terms and conditions contained within this document. If you do not accept these conditions, do not take any further action regarding this Software Product.\n\n1. USAGE OF LICENSE: Provided you comply with all applicable terms and conditions within this document (both stated and implied), TNEDICCA® hereby grants you a revocable, limited, and non-transferrable license to use The Application on any mobile device that you own or control as permitted by the Usage Rules set forth in the App Store Terms and Conditions or the Google Play Terms of Service; whichever is deemed relevant to your personal service.\n\n2. RIGHTS OF ALTERATION: TNEDICCA® reserves the right, at its own discretion, to modify or change the terms of this Agreement at any time, and will promptly notify all users of such imminent conditions. Your continued use of The Application following advisory of any current and future changes to the Agreement constitutes acceptance of all addendums.\n\n3. PROPREITARY RIGHTS: The Application, including all text, graphics, interfaces, trademarks, logos, language, code, documentation, and other content (collectively known as The Content) is the exclusive property of TNEDICCA® and is protected by copyright, trademark, and other applicable intellectual property laws. No elements of The Application or The Content may be copied, reproduced, sold, republished, reposted or otherwise distributed for public or commercial use at any time. Furthermore, you agree that TNEDICCA® owns all data gathered during use of The Application.\n\n4. TERMS &amp; CONDITIONS: This document is effective unless terminated and/or rejected. Likewise, The Agreement will also terminate immediately and without additional notice in the event you breach and/or fail to operate within any of the contained terms or conditions.\n\n5. COLLECTION OF DATA: The Application transmits data regarding your Global Position System (known as GPS) location. This data is uploaded from The Application based on a user’s current and recent trip information. The data captured includes—but is not limited to—start and end times, mileage, rapid accelerations, hard stops, fast cornering, and average speeds captured during a user’s trip. In addition, The Application captures trip route information (when GPS-enabled), and mobile device information, including International Mobile Equipment Identity (known as IMEI). No further data will be collected once your program participation has ended. We further recommend you uninstall The Application from your mobile device at such a time.\n\n6. DATA USAGE: TNEDICCA® gathers and combines data from The Application for the purpose of determining future changes and how they may enhance The Application. This means any and all captured data may be retained indefinitely. Data collected from The Application may also be provided to insurance companies to evaluate The Content and its correctness.\n\n7. MOBILE SERVICE: The Application transmits data via an accessible wireless networks and/or your personal wireless carrier. TNEDICCA® is not responsible or liable for any charges associated with the use of this or any other applications in your possession. Service may occasionally be restricted, interrupted or discontinued due to conditions such as—but not limited to—app design, network availability or any other situations beyond the control of TNEDICCA®.\n\n8. DISCLAIMER OF WARRANTY: This Application is licensed as-is with all contained and perceived faults and therefore it is acknowledged that the individual bears the risk of using it. TNEDICCA® on behalf of itself; distributors of The Application; all associated data networks; and each of their respective affiliates and suppliers; gives no exclusive or implied warranties, guarantees or conditions under or in relation to usage. TNEDICCA® does not state that all functionality or operation of The Application will be presented uninterrupted or free from errors, that any defects in The Application will be corrected within a specific time frame or that The Application and its server(s) are free of any harmful conditions or components.\n\n9. LIABILITY LIMITATIONS: TNEDICCA® disclaims liability, whether based in contract, negligence, tort, liability or otherwise, for damages of any kind. This also includes any damages that arise from interruptions of service or delay in operation or transmission, as well as those that manifest from third party access to personal information input in The Application; even if TNEDICCA® has express knowledge of the possibility of such damages. TNEDICCA® has no responsibility, and shall not be held liable, for the security or condition of any user’s mobile device or for any damage caused to said mobile device from any use of the Application. You agree not to seek compensation for any damages, including consequential, lost profits, special, indirect or incidental damages from TNEDICCA® or its affiliates.\n\n10. INDEMNITY: You agree to indemnify and hold TNEDICCA® and its employees and partners harmless from any claim or demand made by a third party due to, or related to, your violation of the terms and conditions of this document, your violation of any applicable laws, regulations or third party rights or your negligent act, omission or willful misconduct.\n\n11. COMPLIANCE: The user shall comply with all laws and regulations of the United States to ensure that the Software Product is not (1) exported, directly or indirectly in violation of Export Laws, or (2) used for any purpose prohibited by Export Laws. You further agree that you will not use the Software Product for any prohibited purpose. \n\nThe Application relies on traffic data to propose safer routes that may have a low crash risk. All data published on The Application is derived from relevant, proximity-based state agencies. TNEDICCA® has processes to provide quality information, but makes no claims, promises or guarantees of its accuracy or completeness, or the adequacy of traffic safety records data contained in or linked to this product; pursuant to federal law (23 U.S.C. § 409). While all provided information is believed by The Company to be current and accurate, no liability is assumed for errors in substance or form. Any conclusions, expressed or implied, within The Application are those of TNEDICCA® and are not necessarily representative of the state agencies.\n\nAny collected crash data is prohibited from use in litigation against federal, state, local or presiding governments that involves the location(s) mentioned in the crash data, as stated under Section 409 of Title 23 of the United States Code. By clicking “Agree”, you henceforth comply with these terms in their entirety.\n\n12. APPLICABLE LAW: This document is governed by Ohio state laws, exclusive of conflict of any law provisions, and you hereby agree to the jurisdiction of the courts of Ohio with respect to any proceedings that arise from its contents. All parties are in conformity that the United Nations Convention of Contracts for the International Sale of Goods does not govern this Agreement.\n\n13. COVERAGE: The Application’s services will be available for some states. \n\n\n14. PRIVACY POLICY:\n\n14.1 General Information\n\nThis Privacy Policy, together with The entirety of the End-User License Agreement, applies to usage of The Application called “RouteWise”.\n\nRouteWise, is an application developed by GLOBAL TRAFFIC ACCIDENT REDUCTION INC., an Ohio-based corporation operating as TNEDICCA® (herby referred to as The Company). TNEDICCA® is committed to protecting and respecting the privacy of users of The Application and The Content. This policy sets forth the basis on which any personal data that is collected from or provided by users will be stored, processed, and shared. Please read the following information carefully and thoroughly to understand The Company’s practices regarding personal data and its guidelines for use.\n\n14.2 Types of Data Collected &amp; Processed\n\nThe Company collects personal data specifically and voluntarily provided 	by users.\n\nPersonal data is defined as any information by which a user of The Application can be identified, such as names, usernames, email addresses, passwords, physical addresses, GPS coordinates, and phone number(s), as well as the make, model, year, and vehicle identification information associated with their account. The provision and collection of this information is necessary in order to allow The Application to function as described in the End-User License Agreement. Such personal data is requested of users when they create an account within The Application.\n\nTo provide services associated with The Application, The Company needs to collect geographical location data from any functioning mobile device sensors, continuously and consistently, every few seconds regardless of whether The Application is in-use. For The Application to function properly, it requires that GPS technology and location services be enabled. Furthermore, the mobile device must grant The Application permission to access these functionalities in order to determine current location. By downloading and using The Application, users consent to their data being collected and used for such purposes. Providing The Application services also requires that data be collected in regard to driving styles and habits collectively referred to as “Driving Behaviors”.\n\nThe Company also collects technical information, including—but not limited to—the type of mobile device in use, the mobile operating system, and current time zone settings. However, TNEDICCA® will not collect or process sensitive data, which is to be understood of personal data that is capable of revealing a user’s race or ethnicity; religious, philosophical and other type of beliefs; political opinions; trade union associations; or personal data capable of revealing a user’s state of health or sexual orientation.\n\n14.3 Data Processing\n\nAll personal data voluntarily provided by users will be processed by automated means using proprietary software that correlates with The Application and its related services. It should be noted that the personal data requested from users when they register to use The Application is necessary to enable use.\n\n14.4 Disclosure of User Data\n\nFor the purpose of providing the intended services, The Company may disclose some or all of its collected data. Such information may be provided to partners of The Company for processing, which will allow them to (1) improve The Application’s user experience and (2) generate marketing communications for those users who have opted-in to such correspondence. By downloading and using The Application, users also agree that The Company may disclose personal data to certain third parties not referred to in this privacy policy, such cases would include: \n\nIf The Company buys or sells—or proposes to buy or sell—any part of the business or its individual assets; in which case the relevant data controller may disclose users’ personal data to the prospective seller or buyer.\nIf TNEDICCA®, or subsequently all of The Company’s assets, are acquired by a third party or it is proposed that The Company will be acquired; in which case personal data held by TNEDICCA® could be one of the transferred assets.\nIf The Company is under a legal duty to disclose or share such data in order to comply with legal or regulatory obligations or requests.\n\n14.5 Personal Data Access\n\nPersonal data provided to TNEDICCA® during use of The Application may be accessed by staff members or one of its suppliers in charge of processing data. However, TNEDICCA® will act to ensure that such access is limited only to those individuals who require it for the outlined services and/or for the purposes set forth in this document.\n\n14.6 Personal Data Storage\n\nAny data collected by The Company may be transferred to and/or stored at a location outside the United States. Staffs operating outside this jurisdiction who work for The Company or one of its affiliates and/or partners may also process it. By submitting personal data, users agree to such transfer, storing, and processing needs. TNEDICCA® will take all reasonable steps to ensure this data is treated securely and in accordance with all aforementioned portions of this privacy policy.\n\n14.7 Length of Personal Account Data Storage \n\nPersonal account data provided to The Company will be retained for the duration of use and for a period of one year after, in order to allow usage at a later time. After one year of nonuse, the user’s driving behavior and location-based data is anonymized to de-associate it from their account and all personal account information (such as username and password) is deleted. If a user deletes their profile within The Application, all personal account data will be deleted immediately.\n\n14.8 Changes &amp; Alterations\n\nThe Company reserves the right to change this privacy policy at any given time. All changes will be posted to this page and, where appropriate, be delivered as a notification to users via e-mail or when users are asked to read and accept these changes in order to continue use of The Application and The Content.\n\n14.9 Tailored Marketing Communications \n\nThe core functions of The Application and The Content are (1) the analysis of data provided by users for profiling purposes such as determining route ratings, individual preferences, driving habits, and consumption needs, and (2) the processing of this data to aggregate statistics, draft models, measure consumer habits, and/or other driving-related statistics. \n\nSuch methods are used to assess individual scores and, more specifically, allow partners of The Company to propose commercial offers to users. By completing the sign-up process, installing The Application, and engaging with The Content, users agree that they provide their explicit consent to (1) the collecting, storing and processing of all relevant data and behavior statistics for profiling purposes, and (2) the sharing of this data for the use and delivery of personalized marketing offers, which will be delivered to users via their preferred method of contact. TNEDICCA® may receive compensation for sharing such data. \n\nIt should be noted that when following any of the outside links provided by partners of the Company, it is understood that these websites and any other services contained within have their own privacy policies and TNEDICCA® does not accept any responsibility or liability for any personal data that may be collected, such as contact and location data. Users should check their accompanying privacy policies prior to submitting any personal data. \n\nUsers also give consent to allow TNEDICCA® the right to contact them on an as-needed basis via their preferred method of communication (i.e. text, phone or e-mail) with regard to account maintenance, user experience, inquiries, accessibility issues, etc.\n\nUsers can withdraw their consent to allowing their data to be used for profiling purposes or to receiving further marketing communications, at any time and free of charge, by deleting The Application from their device(s) or by contacting TNEDICCA® at info@tnedicca.com.\n\n14.10 Contact Information\n\nFor any information or request on the protection of personal data, please contact us at info@tnedicca.com.\n\nBy accepting these terms and conditions, I acknowledge that I have carefully read the Privacy policy and:</string>
+    <string name="driving_data_condition">I voluntarily give my informed consent to the collection, storage and processing of my location and personal driving data, and trip information to TNEDICCA® for profiling purposes such as collecting aggregated statistics, optimizing routes, designing new traffic models, etc.</string>
+    <string name="sharing_data_condition">I give my informed consent to the processing and sharing of my personal data by TNEDICCA® and its partners (as defined within the privacy policy), which may include—but is not limited to—partners located within and/or outside the US, for the purpose of enhancing user experience and developing new capabilities.</string>
+    <string name="incurred_charges_condition">I understand that any incurred charges presented as a result of usage will be my sole financial responsibility.</string>
+    <string name="liability_condition">I understand and agree that all suggested routes are generally estimated to have lower crash risk than their alternatives. However, road hazards and auto accidents can cause difference in potential outcomes. I expressly acknowledge that neither TNEDICCA® nor The Application are liable for any such incidents that occur as a result of using The Application.</string>
+    <string name="privacy_policy">PRIVACY POLICY</string>
+    <string name="privacy_policy_text">1. General Information\n\nThis Privacy Policy, together with The entirety of the End-User License Agreement, applies to usage of The Application called “RouteWise”.\n\nRouteWise, is an application developed by GLOBAL TRAFFIC ACCIDENT REDUCTION INC., an Ohio-based corporation operating as TNEDICCA® (herby referred to as The Company). TNEDICCA® is committed to protecting and respecting the privacy of users of The Application and The Content. This policy sets forth the basis on which any personal data that is collected from or provided by users will be stored, processed, and shared. Please read the following information carefully and thoroughly to understand The Company’s practices regarding personal data and its guidelines for use.\n\n2. Types of Data Collected &amp; Processed\n\nThe Company collects personal data specifically and voluntarily provided 	by users.\n\nPersonal data is defined as any information by which a user of The Application can be identified, such as names, usernames, email addresses, passwords, physical addresses, GPS coordinates, and phone number(s), as well as the make, model, year, and vehicle identification information associated with their account. The provision and collection of this information is necessary in order to allow The Application to function as described in the End-User License Agreement. Such personal data is requested of users when they create an account within The Application.\n\nTo provide services associated with The Application, The Company needs to collect geographical location data from any functioning mobile device sensors, continuously and consistently, every few seconds regardless of whether The Application is in-use. For The Application to function properly, it requires that GPS technology and location services be enabled. Furthermore, the mobile device must grant The Application permission to access these functionalities in order to determine current location. By downloading and using The Application, users consent to their data being collected and used for such purposes. Providing The Application services also requires that data be collected in regard to driving styles and habits collectively referred to as “Driving Behaviors”.\n\nThe Company also collects technical information, including—but not limited to—the type of mobile device in use, the mobile operating system, and current time zone settings. However, TNEDICCA® will not collect or process sensitive data, which is to be understood of personal data that is capable of revealing a user’s race or ethnicity; religious, philosophical and other type of beliefs; political opinions; trade union associations; or personal data capable of revealing a user’s state of health or sexual orientation.\n\n3. Data Processing\n\nAll personal data voluntarily provided by users will be processed by automated means using proprietary software that correlates with The Application and its related services. It should be noted that the personal data requested from users when they register to use The Application is necessary to enable use.\n\n4. Disclosure of User Data\n\nFor the purpose of providing the intended services, The Company may disclose some or all of its collected data. Such information may be provided to partners of The Company for processing, which will allow them to (1) improve The Application’s user experience and (2) generate marketing communications for those users who have opted-in to such correspondence. By downloading and using The Application, users also agree that The Company may disclose personal data to certain third parties not referred to in this privacy policy, such cases would include: \n\nIf The Company buys or sells—or proposes to buy or sell—any part of the business or its individual assets; in which case the relevant data controller may disclose users’ personal data to the prospective seller or buyer.\nIf TNEDICCA®, or subsequently all of The Company’s assets, are acquired by a third party or it is proposed that The Company will be acquired; in which case personal data held by TNEDICCA® could be one of the transferred assets.\nIf The Company is under a legal duty to disclose or share such data in order to comply with legal or regulatory obligations or requests.\n\n5. Personal Data Access\n\nPersonal data provided to TNEDICCA® during use of The Application may be accessed by staff members or one of its suppliers in charge of processing data. However, TNEDICCA® will act to ensure that such access is limited only to those individuals who require it for the outlined services and/or for the purposes set forth in this document.\n\n6. Personal Data Storage\n\nAny data collected by The Company may be transferred to and/or stored at a location outside the United States. Staffs operating outside this jurisdiction who work for The Company or one of its affiliates and/or partners may also process it. By submitting personal data, users agree to such transfer, storing, and processing needs. TNEDICCA® will take all reasonable steps to ensure this data is treated securely and in accordance with all aforementioned portions of this privacy policy.\n\n7. Length of Personal Account Data Storage \n\nPersonal account data provided to The Company will be retained for the duration of use and for a period of one year after, in order to allow usage at a later time. After one year of nonuse, the user’s driving behavior and location-based data is anonymized to de-associate it from their account and all personal account information (such as username and password) is deleted. If a user deletes their profile within The Application, all personal account data will be deleted immediately.\n\n8. Changes &amp; Alterations\n\nThe Company reserves the right to change this privacy policy at any given time. All changes will be posted to this page and, where appropriate, be delivered as a notification to users via e-mail or when users are asked to read and accept these changes in order to continue use of The Application and The Content.\n\n9. Tailored Marketing Communications \n\nThe core functions of The Application and The Content are (1) the analysis of data provided by users for profiling purposes such as determining route ratings, individual preferences, driving habits, and consumption needs, and (2) the processing of this data to aggregate statistics, draft models, measure consumer habits, and/or other driving-related statistics. \n\nSuch methods are used to assess individual scores and, more specifically, allow partners of The Company to propose commercial offers to users. By completing the sign-up process, installing The Application, and engaging with The Content, users agree that they provide their explicit consent to (1) the collecting, storing and processing of all relevant data and behavior statistics for profiling purposes, and (2) the sharing of this data for the use and delivery of personalized marketing offers, which will be delivered to users via their preferred method of contact. TNEDICCA® may receive compensation for sharing such data. \n\nIt should be noted that when following any of the outside links provided by partners of the Company, it is understood that these websites and any other services contained within have their own privacy policies and TNEDICCA® does not accept any responsibility or liability for any personal data that may be collected, such as contact and location data. Users should check their accompanying privacy policies prior to submitting any personal data. \n\nUsers also give consent to allow TNEDICCA® the right to contact them on an as-needed basis via their preferred method of communication (i.e. text, phone or e-mail) with regard to account maintenance, user experience, inquiries, accessibility issues, etc.\n\nUsers can withdraw their consent to allowing their data to be used for profiling purposes or to receiving further marketing communications, at any time and free of charge, by deleting The Application from their device(s) or by contacting TNEDICCA® at info@tnedicca.com.\n\n10. Contact Information\n\nFor any information or request on the protection of personal data, please contact us at info@tnedicca.com</string>
+
+    <string name="quote">Thank you for your interest. We hope that you are having a positive experience with our app. At this time, we are unable to offer you a real time insurance quote. Please accept our sincere apologies. However, we are actively working to partner with auto insurance carriers to offer low rates for drivers who mitigate crash risk by choosing safe routes and demonstrate safe driving behavior. Please hit continue to enter your information in the next screen and we will get back to you when this feature is available.</string>
+    <string name="insurance_agreement">\u00A0\u00A0\u00A0\u00A0By Clicking SUBMIT, I agree to share my contact information with TNEDICCA and its affiliated partners. I also give permission to TNEDICCA and its affiliated partners to contact me with Auto Insurance related promotional offers based on the data collected by RouteWise mobile application.\n</string>
+    <string name="continue_text">Continue</string>
+    <string name="no_thanks_text">No Thanks</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="age">Age</string>
+    <string name="email_address">Email Address</string>
+    <string name="garaging_address">Garaging Address</string>
+    <string name="cancel">Cancel</string>
+    <string name="submit">Submit</string>
+    <string name="blank_first_name_msg">Enter First Name</string>
+    <string name="invalid_first_name_msg">Invalid First Name</string>
+    <string name="blank_last_name_msg">Enter Last Name</string>
+    <string name="invalid_last_name_msg">Invalid Last Name</string>
+    <string name="blank_age_msg">Enter Age</string>
+    <string name="invalid_age_msg">Invalid Age</string>
+    <string name="blank_phone_no_msg">Enter Phone Number</string>
+    <string name="invalid_phone_no_msg">Invalid Phone Number</string>
+    <string name="blank_email_adrs_msg">Enter Email Address</string>
+
+    <string name="invalid_email_adrs_msg">Invalid Email Address</string>
+    <string name="blank_garaging_address_msg">Enter Garaging Address</string>
+    <string name="invalid_garaging_address_msg">Invalid Garaging Address</string>
+
+    <string name="title_plan_trip">PLAN TRIP</string>
+    <string name="title_help">HELP</string>
+    <string name="title_dashboard">DASHBOARD</string>
+    <string name="title_insurance_quote">INSURANCE QUOTE</string>
+    <string name="title_safe">SAFE ROUTES</string>
+    <string name="title_detail">MY TRIPS</string>
+
+    <string name="my_trips_title">MY TRIPS</string>
+    <string name="my_trips_subtitle">Viewing Last 20 Trips</string>
+    <string name="route_risk_score">Route Risk Score</string>
+    <string name="driving_score">Driving Score</string>
+    <string name="distance">Distance</string>
+
+    <string name="safe_choice">Safe Choice</string>
+    <string name="directions">DIRECTIONS</string>
+
+    <!--Registration fields-->
+    <string name="from_text">from Your location</string>
+    <string name="to_text">Choose destination</string>
+    <string name="create_password">Create Password</string>
+    <string name="old_password_text">Old Password</string>
+    <string name="new_password_text">New Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="full_name">Full Name</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="street_address">Street Address (optional)</string>
+    <string name="vehicle_make">Vehicle Make (optional)</string>
+    <string name="vehicle_model">Vehicle Model (optional)</string>
+    <string name="vehicle_year">Vehicle Year (optional)</string>
+    <string name="invalid_email_address_msg">Enter valid email address</string>
+    <string name="blank_email_address_msg">Enter email address</string>
+    <string name="blank_email_phone_msg">Enter email / phone number</string>
+    <string name="invalid_password_msg">8 characters - Caps, number, special</string>
+    <string name="blank_password_msg">Enter password</string>
+    <string name="blank_old_password_msg">Enter old password</string>
+    <string name="blank_confirm_password_msg">Confirm password</string>
+    <!--<string name="invalid_confirm_password_msg">Requires : 1 capital - 1 number - 1 special character</string>-->
+    <string name="password_not_matched_msg">Passwords do not match</string>
+    <string name="full_name_error_msg">Please enter valid name</string>
+    <string name="blank_full_name_msg">Enter name</string>
+    <string name="blank_phone_number_msg">Enter phone number</string>
+    <string name="invalid_phone_number_msg">Please enter a valid phone number</string>
+    <string name="blank_address_msg">Enter address</string>
+    <string name="invalid_address_msg">Please enter a valid address</string>
+    <string name="blank_vehicle_make_msg">Enter vahicle make</string>
+    <string name="vehicle_make_msg">Please select vehicle make</string>
+    <string name="blank_vehicle_model_msg">Enter vehicle model</string>
+    <string name="vehicle_model_msg">Please select vehicle model</string>
+    <string name="blank_vehicle_year_msg">Enter vehicle year</string>
+    <string name="vehicle_year_msg">Please select vehicle year</string>
+    <string name="next">Next</string>
+    <string name="searches">Searches</string>
+    <string name="results">Results</string>
+    <string name="address">Address</string>
+    <string name="address_suggestion">ADDRESS SUGGESTION</string>
+
+    <!--Server response-->
+    <string name="server_response">Volley Response :</string>
+    <string name="response_code">Status :</string>
+    <string name="success_message">Login Success  </string>
+<!--    <string name="received_response">Received Response</string>-->
+    <string name="received_error">Received Error</string>
+    <string name="registration_submit_succes">Registration data submitted</string>
+
+    <string name="user_already_registered">User already registered </string>
+    <string name="phone_number_already_registered">Phone number already registered </string>
+    <string name="user_activation_success">User activation successful </string>
+    <string name="user_not_available">User not available  </string>
+    <string name="phone_number_not_available">Phone Number not available  </string>
+    <string name="insurance_details_submitted">Insurance Details Submitted  </string>
+    <string name="insurance_details_fetched">Insurance Details fetched</string>
+    <string name="not_applied_before">Not Applied Before</string>
+    <string name="updation_failed">Updation Failed</string>
+
+    <!--Getting Permissions-->
+    <string name="permission_loc">Allow permission to access your location.</string>
+    <string name="permission_storage">Allow permission to access External Storage</string>
+
+    <!--Logger mesages-->
+    <string name="log_error_at">Error at</string>
+    <string name="log_keep_me_logged_in">Keep me logged in :</string>
+    <string name="log_logged_in"> Logged In</string>
+    <string name="log_keep_me_logged_in_button_checked">Keep me logged in button is checked :</string>
+    <string name="log_message">, message :</string>
+    <string name="log_message_for_incorrect_password">message : Incorrect password for Email :</string>
+    <string name="log_on_focus_changed">On Focus Change :</string>
+    <string name="log_on_login_button_clicked">On Login Button Click :</string>
+    <string name="log_connecting_rest_api">Connecting REST API.</string>
+    <string name="log_terms_and_condition_oncheckedChange_default">Terms and Condition OnCheckedChangeListener default case executed</string>
+    <string name="log_terms_and_condition_onclick_default">Terms and Condition OnClickListener default case executed</string>
+    <string name="log_error_processing_place_api_url">Error processing Places API URL</string>
+    <string name="log_error_connecting_place_api">Error connecting to Places API</string>
+    <string name="log_registration_onfocuschange_default">Registration: default case executed for onFocusChange for view tag :</string>
+    <string name="onclick_default">Default Case Executed</string>
+
+    <!--Fonts-->
+    <string name="font_malgun">fonts/MALGUN.TTF</string>
+    <string name="font_malgun_bold">fonts/MALGUNBD.TTF</string>
+    <string name="font_malgun_semi_light">fonts/MALGUNSL.TTF</string>
+    <string name="font_titillium_black">fonts/Titillium-Black.otf</string>
+    <string name="font_titillium_bold">fonts/Titillium-Bold.otf</string>
+    <string name="font_titillium_bold_italic">fonts/Titillium-BoldItalic.otf</string>
+    <string name="font_titillium_light">fonts/Titillium-Light.otf</string>
+    <string name="font_titillium_light_italic">fonts/Titillium-LightItalic.otf</string>
+    <string name="font_titillium_light_upright">fonts/Titillium-LightUpright.otf</string>
+    <string name="font_titillium_regular">fonts/Titillium-Regular.otf</string>
+    <string name="font_titillium_regular_italic">fonts/Titillium-RegularItalic.otf</string>
+    <string name="font_titillium_semi_bold">fonts/Titillium-Semibold.otf</string>
+    <string name="font_titillium_semi_bold_italic">fonts/Titillium-SemiboldItalic.otf</string>
+    <string name="font_titillium_semi_bold_upright">fonts/Titillium-SemiboldUpright.otf</string>
+
+    <string name="text_size_normal">18</string>
+    <string name="text_size_small">14</string>
+    <string name="nearBlack">nearBlack</string>
+
+    <string name="approval_text">A code has been sent your email/sms. \n Please enter the code below to verify your identity.</string>
+    <string name="approval_hint">Enter Authorization Code</string>
+    <string name="incorrect_code_text">The code you entered is not correct. \n Please try again or request a new code.</string>
+    <string name="request_new_code">Request New Code</string>
+    <string name="verify_identity">VERIFY IDENTITY</string>
+
+    <string name="subscribe_message">You have unsubscribed to RouteWise app on $localDate. Do you want to subscribe again?</string>
+    <string name="logout_message">RouteWise will track trips even after logout, Do you still want to Logout?</string>
+    <string name="send_log_message">RouteWise will send your logs for app improvement!</string>
+    <string name="new_device_message">You are logged in with some other device. Click AGREE to continue tracking in this device.</string>
+    <string name="delete_account">Are you sure want to delete your account?</string>
+    <string name="logout_title">LOGOUT</string>
+    <string name="delete_title">DELETE ACCOUNT</string>
+    <string name="subscribe_title">SUBSCRIBE</string>
+    <string name="delete">DELETE</string>
+    <string name="yes">YES</string>
+    <string name="no">NO</string>
+
+    <string name="risk_score_text">Risk Score</string>
+
+    <string name="version_number">Version no</string>
+    <string name="build_number">Build no</string>
+    <string name="contact_info">Contact Info</string>
+    <string name="contact_info_text">info@tnedicca.com</string>
+    <string name="colon">:</string>
+
+<!--    Activity Recognization-->
+    <string name="bicycle">On a bicycle</string>
+    <string name="foot">On foot</string>
+    <string name="running">Running</string>
+    <string name="still">Still</string>
+    <string name="tilting">Tilting</string>
+    <string name="unknown_activity">Unknown activity</string>
+    <string name="vehicle">In a vehicle</string>
+    <string name="walking">Walking</string>
+</resources>

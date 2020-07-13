@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.tnedicca.routewise.views.CustomEditTextView
+        android:id="@+id/from"
+        android:layout_width="@dimen/dimen_200dp"
+        android:layout_height="@dimen/dimen_40dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/edit_text_shape"
+        android:gravity="center_horizontal|center_vertical"
+        android:hint="@string/from_text"
+        android:inputType="text"
+        android:maxLines="1"
+        android:padding="@dimen/dimen_5dp"
+        android:textColor="@color/nearBlack"
+        android:textColorHint="@color/battleshipGrey"
+        android:textSize="@dimen/dimen_15sp"
+        app:face="@string/font_malgun_semi_light" />
+
+    <com.tnedicca.routewise.views.CustomEditTextView
+        android:id="@+id/to"
+        android:layout_width="@dimen/dimen_200dp"
+        android:layout_height="@dimen/dimen_40dp"
+        android:layout_below="@+id/from"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dimen_5dp"
+        android:background="@drawable/edit_text_shape"
+        android:gravity="center_horizontal|center_vertical"
+        android:hint="@string/to_text"
+        android:inputType="text"
+        android:maxLines="1"
+        android:padding="@dimen/dimen_5dp"
+        android:textColor="@color/nearBlack"
+        android:textColorHint="@color/battleshipGrey"
+        android:textSize="@dimen/dimen_15sp"
+        app:face="@string/font_malgun_semi_light" />
+
+    <com.tnedicca.routewise.views.CustomTextView
+        android:id="@+id/search_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/to"
+        android:layout_marginBottom="@dimen/dimen_5dp"
+        android:layout_marginLeft="@dimen/dimen_10dp"
+        android:layout_marginRight="@dimen/dimen_10dp"
+        android:layout_marginTop="@dimen/dimen_5dp"
+        android:background="@color/lightGrey"
+        android:text="@string/searches"
+        android:textSize="@dimen/dimen_15sp"
+        android:textColor="@color/nearBlack"
+        app:face="@string/font_malgun_bold" />
+
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/search_textview"
+        android:layout_centerHorizontal="true"
+        android:progressDrawable="@drawable/progressbar" />
+
+    <ListView
+        android:id="@+id/places_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/progress"
+        android:paddingBottom="@dimen/dimen_5dp"
+        android:paddingLeft="@dimen/dimen_10dp"
+        android:paddingRight="@dimen/dimen_10dp"
+        android:paddingTop="@dimen/dimen_5dp"
+        android:textSize="@dimen/dimen_15sp" />
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.MapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom_layout"
+        android:layout_below="@+id/to"
+        android:layout_marginTop="@dimen/dimen_5dp" />
+
+    <RelativeLayout
+        android:id="@+id/bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:paddingLeft="@dimen/dimen_15dp"
+        android:paddingRight="@dimen/dimen_15dp">
+
+        <RelativeLayout
+            android:id="@+id/duration_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_5dp">
+
+            <com.tnedicca.routewise.views.CustomTextView
+                android:id="@+id/duration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Duration"
+                android:textColor="@color/black"
+                android:textSize="@dimen/dimen_16sp"
+                app:face="@string/font_malgun_bold" />
+
+            <com.tnedicca.routewise.views.CustomTextView
+                android:id="@+id/distance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_10dp"
+                android:layout_toRightOf="@+id/duration"
+                android:text="(Distance)"
+                android:textColor="@color/battleshipGrey"
+                android:textSize="@dimen/dimen_16sp"
+                app:face="@string/font_malgun_semi_light" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/risk_factor_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/duration_layout"
+            android:layout_marginTop="@dimen/dimen_5dp">
+
+            <com.tnedicca.routewise.views.CustomTextView
+                android:id="@+id/risk_factor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Route Risk Factor : "
+                android:textColor="@color/black"
+                android:textSize="@dimen/dimen_16sp"
+                app:face="@string/font_malgun_semi_light" />
+
+            <com.tnedicca.routewise.views.CustomTextView
+                android:id="@+id/risk_factor_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_10dp"
+                android:layout_toRightOf="@+id/risk_factor"
+                android:text="0"
+                android:textColor="@color/black"
+                android:textSize="@dimen/dimen_16sp"
+                app:face="@string/font_malgun_bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/safe_route_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/risk_factor_layout"
+            android:layout_marginTop="@dimen/dimen_5dp">
+
+            <com.tnedicca.routewise.views.CustomTextView
+                android:id="@+id/safe_route"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Safe Route : "
+                android:textColor="@color/black"
+                android:textSize="@dimen/dimen_16sp"
+                app:face="@string/font_malgun_semi_light" />
+
+            <com.tnedicca.routewise.views.CustomTextView
+                android:id="@+id/safe_route_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_10dp"
+                android:layout_toRightOf="@+id/safe_route"
+                android:text="NO"
+                android:textColor="@color/black"
+                android:textSize="@dimen/dimen_16sp"
+                app:face="@string/font_malgun_bold" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

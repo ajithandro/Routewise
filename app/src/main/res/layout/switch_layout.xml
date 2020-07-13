@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.tnedicca.routewise.views.CustomWebView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="fill_horizontal"
+        android:layout_marginBottom="@dimen/dimen_15dp"
+        android:layout_marginTop="@dimen/dimen_15dp"
+        android:layout_toLeftOf="@+id/switchView"
+        android:paddingLeft="@dimen/dimen_2dp"
+        android:paddingRight="@dimen/dimen_6dp"
+        android:text="TextView"
+        app:face="@string/font_malgun_semi_light"
+        app:justify="true"
+        app:textColor="@color/black"
+        app:textSize="@dimen/dimen_20sp" />
+
+    <com.kyleduo.switchbutton.SwitchButton
+        android:id="@+id/switchView"
+        style="@style/SwitchButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:visibility="invisible"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        app:kswBackDrawable="@drawable/miui_back_drawable"
+        app:kswBackMeasureRatio="1.7"
+        app:kswThumbDrawable="@drawable/miui_thumb_drawable"
+        app:kswThumbHeight="@dimen/dimen_18dp"
+        app:kswThumbWidth="@dimen/dimen_18dp" />
+</RelativeLayout>

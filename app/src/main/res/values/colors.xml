@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<color name="colorPrimary">#3F51B5</color>-->
+    <!--<color name="colorPrimaryDark">#303F9F</color>-->
+    <!--<color name="colorAccent">#FF4081</color>-->
+
+    <color name="light_gray_header_color">#646663</color>
+
+    <color name="blue">#29ABE2</color>
+    <color name="white">#ffffff</color>
+    <color name="red">#ff0000</color>
+    <color name="mapRed">#ff1833</color>
+    <color name="battleshipGrey">#707D85</color>
+    <color name="black">#000000</color>
+    <color name="nearBlack">#333333</color>
+    <color name="bg_black">#6A000000</color>
+    <color name="switchBackDrwable">#B8CAD2</color>
+    <color name="startGreen">#00FF6C</color>
+
+    <color name="profile_text">#000</color>
+
+    <color name="arc_color">#4D4D4D</color>
+
+    <color name="progress_gray">#FFD8D8D8</color>
+    <color name="progress_gray_dark">#FF383838</color>
+    <color name="default_blue_light">#ff33b5e5</color>
+
+    <color name="fadeBlue">#8FD0EC</color>
+    <color name="lightGrey">#F3F3EF</color>
+</resources>

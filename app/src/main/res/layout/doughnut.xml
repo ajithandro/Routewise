@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/doughnut_container"
+        layout="@layout/doughnut_container"
+        android:layout_width="@dimen/dimen_doughnut_container_width"
+        android:layout_height="@dimen/dimen_doughnut_container_height"
+        android:layout_centerInParent="true"/>
+
+    <FrameLayout
+        android:id="@+id/seekArcContainer"
+        android:layout_width="@dimen/dimen_seekArcContainer_width"
+        android:layout_height="@dimen/dimen_seekArcContainer_height"
+        android:layout_centerInParent="true">
+
+        <com.tnedicca.routewise.views.SeekArc
+            android:id="@+id/seekArcComplete"
+            android:layout_width="@dimen/dimen_seekArcContainer_width"
+            android:layout_height="@dimen/dimen_seekArcContainer_height"
+            android:layout_gravity="center"
+            android:padding="@dimen/dimen_seekArcComplete_padding"
+            app:arcColor="@color/arc_color"
+            app:arcWidth="@dimen/dimen_arc_width"
+            app:clockwise="true"
+            app:enabled="false"
+            app:innerArcWidth="@dimen/dimen_inner_arc_width"
+            app:max="100"
+            app:outerArcWidth="@dimen/dimen_outer_arc_width"
+            app:progressColor="@color/blue"
+            app:progressWidth="@dimen/dimen_30dp"
+            app:rotation="185"
+            app:roundEdges="true"
+            app:startAngle="0"
+            app:sweepAngle="360" />
+
+    </FrameLayout>
+
+</RelativeLayout>

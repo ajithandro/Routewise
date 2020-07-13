@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/header"
+        layout="@layout/actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_5dp" />
+
+    <ImageView
+        android:id="@+id/thumbs_image"
+        android:layout_width="@dimen/dimen_100dp"
+        android:layout_height="@dimen/dimen_100dp"
+        android:layout_below="@+id/header"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dimen_20dp"
+        android:src="@drawable/ic_thumb"
+        android:visibility="gone" />
+
+    <com.tnedicca.routewise.views.CustomTextView
+        android:id="@+id/safe_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/thumbs_image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/dimen_30dp"
+        android:layout_marginRight="@dimen/dimen_30dp"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:text="You are already on the safest route. That's great! Keep up the safe driving!"
+        android:textColor="@color/nearBlack"
+        android:textSize="@dimen/dimen_18sp"
+        android:visibility="gone"
+        app:face="@string/font_malgun_semi_light" />
+
+    <RelativeLayout
+        android:id="@+id/address_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/dimen_10dp"
+        android:layout_marginLeft="@dimen/dimen_15dp"
+        android:layout_marginRight="@dimen/dimen_20dp"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:id="@+id/start_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/start_dot"
+                android:layout_width="@dimen/dimen_20dp"
+                android:layout_height="@dimen/dimen_20dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dimen_10dp"
+                android:layout_marginRight="@dimen/dimen_10dp"
+                android:src="@drawable/green_bullet" />
+
+            <com.tnedicca.routewise.views.CustomTextView
+                android:id="@+id/start_point"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/start_dot"
+                android:text="start point"
+                android:textColor="@color/nearBlack"
+                android:textSize="@dimen/dimen_18sp"
+                app:face="@string/font_malgun_semi_light" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/start_layout"
+            android:layout_below="@+id/start_layout"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dimen_end_layout_marginTop">
+
+            <ImageView
+                android:id="@+id/end_dot"
+                android:layout_width="@dimen/dimen_20dp"
+                android:layout_height="@dimen/dimen_20dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dimen_10dp"
+                android:layout_marginRight="@dimen/dimen_10dp"
+                android:src="@drawable/red_bullet" />
+
+            <com.tnedicca.routewise.views.CustomTextView
+                android:id="@+id/end_point"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/end_dot"
+                android:text="end point"
+                android:textColor="@color/nearBlack"
+                android:textSize="@dimen/dimen_18sp"
+                app:face="@string/font_malgun_semi_light" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dimen_1dp"
+        android:layout_below="@+id/address_layout"
+        android:layout_marginBottom="@dimen/dimen_5dp"
+        android:layout_marginLeft="@dimen/dimen_10dp"
+        android:layout_marginRight="@dimen/dimen_10dp"
+        android:layout_marginTop="@dimen/dimen_5dp"
+        android:background="@color/nearBlack"
+        android:visibility="gone" />
+
+    <com.tnedicca.routewise.views.CustomTextView
+        android:id="@+id/suggest_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:text="Suggested Routes"
+        android:textColor="@color/black"
+        android:textSize="@dimen/dimen_18sp"
+        android:visibility="gone"
+        app:face="@string/font_malgun_semi_light" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/trip_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/suggest_text"
+        android:layout_marginTop="@dimen/dimen_20dp"
+        android:layout_margin="@dimen/dimen_5dp"
+        android:scrollbars="vertical"
+        android:visibility="gone" />
+
+</RelativeLayout>

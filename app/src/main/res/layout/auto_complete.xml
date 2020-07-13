@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <include
+        android:id="@+id/header"
+        layout="@layout/actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="5dp" />
+
+    <com.tnedicca.routewise.views.CustomEditTextView
+        android:id="@+id/google_places_auto_complete"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/header"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/edit_text_shape"
+        android:cursorVisible="true"
+        android:gravity="center_horizontal|center_vertical"
+        android:hint="@string/address"
+        android:imeOptions="actionDone"
+        android:inputType="text"
+        android:maxLines="1"
+        android:padding="10dp"
+        android:scrollHorizontally="true"
+        android:textColor="@color/nearBlack"
+        android:textColorHint="@color/battleshipGrey"
+        android:textCursorDrawable="@null"
+        app:face="@string/font_malgun_semi_light" />
+
+    <com.tnedicca.routewise.views.CustomTextView
+        android:id="@+id/search_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/google_places_auto_complete"
+        android:layout_marginBottom="@dimen/dimen_10dp"
+        android:layout_marginLeft="@dimen/dimen_10dp"
+        android:layout_marginRight="@dimen/dimen_10dp"
+        android:layout_marginTop="@dimen/dimen_5dp"
+        android:background="@color/lightGrey"
+        android:text="@string/searches"
+        android:textColor="@color/nearBlack"
+        app:face="@string/font_malgun_bold" />
+
+    <ListView
+        android:id="@+id/places_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/search_textview"
+        android:paddingBottom="@dimen/dimen_5dp"
+        android:paddingLeft="@dimen/dimen_10dp"
+        android:paddingRight="@dimen/dimen_10dp"
+        android:paddingTop="@dimen/dimen_5dp" />
+
+</RelativeLayout>

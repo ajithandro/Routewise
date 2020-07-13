@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.tnedicca.routewise.views.CustomTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dimen_40dp"
+    android:layout_gravity="fill_horizontal"
+    android:background="@drawable/list_view_shape"
+    android:gravity="center_vertical"
+    android:maxLines="1"
+    android:paddingLeft="@dimen/dimen_2dp"
+    android:textColor="@color/nearBlack"
+    android:textSize="@dimen/dimen_15sp"
+    app:face="@string/font_malgun_semi_light" />
+
+
+<!--
+    <?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="@dimen/dimen_40dp"
+android:background="@drawable/list_view_shape"
+android:gravity="center_vertical"
+android:maxLines="1"
+android:textColor="@color/nearBlack"
+android:textSize="@dimen/dimen_15sp">
+
+</TextView>-->

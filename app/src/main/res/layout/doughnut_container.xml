@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.tnedicca.routewise.views.RoundedView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/innerMostContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/view1"
+            android:layout_alignParentTop="true">
+
+            <com.tnedicca.routewise.views.CustomTextView
+                android:id="@+id/risk_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/risk_text"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/dimen_minus_10dp"
+                android:maxLines="1"
+                android:paddingLeft="@dimen/dimen_risk_score_padding_left"
+                android:paddingRight="@dimen/dimen_risk_score_padding_right"
+                android:text="7"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/dimen_dc_risk_score"
+                app:autoResize="true"
+                app:face="@string/font_malgun_bold" />
+
+            <com.tnedicca.routewise.views.CustomTextView
+                android:id="@+id/risk_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:maxLines="1"
+                android:text="MEDIUM"
+                android:textColor="@color/black"
+                android:textSize="@dimen/dimen_dc_risk_text"
+                app:face="@string/font_malgun_semi_light" />
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dimen_3dp"
+            android:layout_above="@+id/bottom_layout"
+            android:background="@color/arc_color" />
+
+        <RelativeLayout
+            android:id="@+id/bottom_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_bottom_layout_height"
+            android:layout_alignParentBottom="true"
+            android:background="@color/battleshipGrey">
+
+            <com.tnedicca.routewise.views.CustomTextView
+                android:id="@+id/bottom_text"
+                android:layout_width="@dimen/dimen_100dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:maxLines="2"
+                android:text="Route Risk Score"
+                android:gravity="center_horizontal"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dimen_bottom_text_size"
+                app:autoResize="true"
+                app:face="@string/font_malgun_semi_light" />
+        </RelativeLayout>
+    </RelativeLayout>
+</com.tnedicca.routewise.views.RoundedView>

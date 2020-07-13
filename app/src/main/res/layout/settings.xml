@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_10dp"
+                android:layout_marginRight="@dimen/dimen_10dp"
+                android:orientation="horizontal">
+
+                <com.tnedicca.routewise.views.CustomTextView
+                    android:id="@+id/keep_meloged_in_text"
+                    android:layout_width="@dimen/dimen_0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="@dimen/dimen_0dp"
+                    android:layout_weight=".8"
+                    android:text="@string/keep_me_logged_in"
+                    android:textColor="@color/nearBlack"
+                    android:textSize="@dimen/dimen_16sp"
+                    app:face="@string/font_malgun_semi_light" />
+
+                <com.kyleduo.switchbutton.SwitchButton
+                    android:id="@+id/settings_keep_me_loged_in_switch"
+                    style="@style/SwitchButtonStyle"
+                    android:layout_width="@dimen/dimen_0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight=".2"
+                    android:checked="true"
+                    android:gravity="end"
+                    app:kswBackDrawable="@drawable/miui_back_drawable"
+                    app:kswBackMeasureRatio="1.7"
+                    app:kswThumbDrawable="@drawable/miui_thumb_drawable"
+                    app:kswThumbHeight="@dimen/dimen_18dp"
+                    app:kswThumbWidth="@dimen/dimen_18dp" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view1"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dimen_1dp"
+                android:layout_marginBottom="@dimen/dimen_5dp"
+                android:layout_marginLeft="@dimen/dimen_10dp"
+                android:layout_marginRight="@dimen/dimen_10dp"
+                android:layout_marginTop="@dimen/dimen_5dp"
+                android:background="@color/battleshipGrey" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_10dp"
+                android:layout_marginRight="@dimen/dimen_10dp"
+                android:orientation="horizontal">
+
+                <com.tnedicca.routewise.views.CustomTextView
+                    android:id="@+id/tracking_enabled_text"
+                    android:layout_width="@dimen/dimen_0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="@dimen/dimen_0dp"
+                    android:layout_weight=".8"
+                    android:text="@string/tracking_enabled_text"
+                    android:textColor="@color/nearBlack"
+                    android:textSize="@dimen/dimen_16sp"
+                    app:face="@string/font_malgun_semi_light" />
+
+                <com.kyleduo.switchbutton.SwitchButton
+                    android:id="@+id/tracking_enabled_switch"
+                    style="@style/SwitchButtonStyle"
+                    android:layout_width="@dimen/dimen_0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight=".2"
+                    android:gravity="end"
+                    app:kswBackDrawable="@drawable/miui_back_drawable"
+                    app:kswBackMeasureRatio="1.7"
+                    app:kswThumbDrawable="@drawable/miui_thumb_drawable"
+                    app:kswThumbHeight="@dimen/dimen_18dp"
+                    app:kswThumbWidth="@dimen/dimen_18dp" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/timer"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_100dp"
+                android:layout_marginBottom="@dimen/dimen_10dp"
+                android:layout_marginTop="@dimen/dimen_10dp">
+
+                <com.tnedicca.routewise.views.CustomTextView
+                    android:id="@+id/auto_enable_tracking_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/auto_enable_tracking_in"
+                    android:textColor="@color/nearBlack"
+                    android:textSize="@dimen/dimen_16sp"
+                    app:face="@string/font_malgun_semi_light" />
+
+                <com.tnedicca.routewise.views.CustomTextView
+                    android:id="@+id/within_secs_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/within_secs_text"
+                    android:textColor="@color/nearBlack"
+                    android:textSize="@dimen/dimen_12sp"
+                    app:face="@string/font_malgun_semi_light" />
+
+                <com.tnedicca.routewise.views.CustomTextView
+                    android:id="@+id/within_secs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toRightOf="@+id/within_secs_text"
+                    android:text="0"
+                    android:textColor="@color/nearBlack"
+                    android:textSize="@dimen/dimen_12sp"
+                    app:face="@string/font_malgun_semi_light" />
+
+                <LinearLayout
+                    android:id="@+id/timer_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/dimen_15dp"
+                        android:orientation="vertical">
+
+                        <com.tnedicca.routewise.views.CustomTextView
+                            android:id="@+id/days_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginBottom="@dimen/dimen_2dp"
+                            android:text="@string/days"
+                            android:textColor="@color/nearBlack"
+                            android:textSize="@dimen/dimen_16sp"
+                            app:face="@string/font_malgun_semi_light" />
+
+                        <com.tnedicca.routewise.views.CustomEditTextView
+                            android:id="@+id/days_field"
+                            android:layout_width="@dimen/dimen_settings_field_width"
+                            android:layout_height="@dimen/dimen_settings_field_height"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@drawable/edit_text_shape"
+                            android:focusable="false"
+                            android:gravity="center"
+                            android:hint="0"
+                            android:inputType="number"
+                            android:textColor="@color/nearBlack"
+                            android:textSize="@dimen/dimen_15sp"
+                            app:face="@string/font_malgun_semi_light" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/dimen_15dp"
+                        android:orientation="vertical">
+
+                        <com.tnedicca.routewise.views.CustomTextView
+                            android:id="@+id/hours_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginBottom="@dimen/dimen_2dp"
+                            android:text="@string/hours"
+                            android:textColor="@color/nearBlack"
+                            android:textSize="@dimen/dimen_16sp"
+                            app:face="@string/font_malgun_semi_light" />
+
+                        <com.tnedicca.routewise.views.CustomEditTextView
+                            android:id="@+id/hours_field"
+                            android:layout_width="@dimen/dimen_settings_field_width"
+                            android:layout_height="@dimen/dimen_settings_field_height"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@drawable/edit_text_shape"
+                            android:focusable="false"
+                            android:gravity="center"
+                            android:hint="2"
+                            android:inputType="number"
+                            android:textColor="@color/nearBlack"
+                            android:textSize="@dimen/dimen_15sp"
+                            app:face="@string/font_malgun_semi_light" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/dimen_15dp"
+                        android:orientation="vertical">
+
+                        <com.tnedicca.routewise.views.CustomTextView
+                            android:id="@+id/minutes_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginBottom="@dimen/dimen_2dp"
+                            android:text="@string/minutes"
+                            android:textColor="@color/nearBlack"
+                            android:textSize="@dimen/dimen_16sp"
+                            app:face="@string/font_malgun_semi_light" />
+
+                        <com.tnedicca.routewise.views.CustomEditTextView
+                            android:id="@+id/minutes_field"
+                            android:layout_width="@dimen/dimen_settings_field_width"
+                            android:layout_height="@dimen/dimen_settings_field_height"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@drawable/edit_text_shape"
+                            android:focusable="false"
+                            android:gravity="center"
+                            android:hint="0"
+                            android:inputType="number"
+                            android:textColor="@color/nearBlack"
+                            android:textSize="@dimen/dimen_15sp"
+                            app:face="@string/font_malgun_semi_light" />
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/view2"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dimen_1dp"
+                android:layout_marginBottom="@dimen/dimen_5dp"
+                android:layout_marginLeft="@dimen/dimen_10dp"
+                android:layout_marginRight="@dimen/dimen_10dp"
+                android:layout_marginTop="@dimen/dimen_5dp"
+                android:background="@color/battleshipGrey" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_10dp"
+                android:layout_marginRight="@dimen/dimen_10dp"
+                android:orientation="horizontal">
+
+                <com.tnedicca.routewise.views.CustomTextView
+                    android:layout_width="@dimen/dimen_0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".45"
+                    android:text="@string/data_uploads_use"
+                    android:textColor="@color/nearBlack"
+                    android:textSize="@dimen/dimen_16sp"
+                    app:face="@string/font_malgun_semi_light" />
+
+                <LinearLayout
+                    android:layout_width="@dimen/dimen_0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".55"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:id="@+id/cellular_only_layout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <com.tnedicca.routewise.views.CustomTextView
+                            android:id="@+id/cellular_only_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/dimen_10dp"
+                            android:layout_toLeftOf="@+id/radio_cellular"
+                            android:gravity="right"
+                            android:text="@string/cellular_only_text"
+                            android:textColor="@color/nearBlack"
+                            android:textSize="@dimen/dimen_16sp"
+                            app:face="@string/font_malgun_semi_light" />
+
+                        <com.tnedicca.routewise.views.CustomRadioButton
+                            android:id="@+id/radio_cellular"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:textSize="@dimen/dimen_16sp" />
+                    </RelativeLayout>
+
+                    <View
+                        android:id="@+id/view3"
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/dimen_1dp"
+                        android:layout_marginBottom="@dimen/dimen_5dp"
+                        android:layout_marginLeft="@dimen/dimen_10dp"
+                        android:layout_marginTop="@dimen/dimen_5dp"
+                        android:background="@color/battleshipGrey" />
+
+                    <RelativeLayout
+                        android:id="@+id/wifi_only_layout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <com.tnedicca.routewise.views.CustomTextView
+                            android:id="@+id/wifi_only_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/dimen_10dp"
+                            android:layout_toLeftOf="@+id/radio_wifi"
+                            android:gravity="right"
+                            android:text="@string/wifi_only_text"
+                            android:textColor="@color/nearBlack"
+                            android:textSize="@dimen/dimen_16sp"
+                            app:face="@string/font_malgun_semi_light" />
+
+                        <com.tnedicca.routewise.views.CustomRadioButton
+                            android:id="@+id/radio_wifi"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true" />
+                    </RelativeLayout>
+
+                    <View
+                        android:id="@+id/view4"
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/dimen_1dp"
+                        android:layout_marginBottom="@dimen/dimen_5dp"
+                        android:layout_marginLeft="@dimen/dimen_10dp"
+                        android:layout_marginTop="@dimen/dimen_5dp"
+                        android:background="@color/battleshipGrey" />
+
+                    <RelativeLayout
+                        android:id="@+id/both_layout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <com.tnedicca.routewise.views.CustomTextView
+                            android:id="@+id/both_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/dimen_10dp"
+                            android:layout_toLeftOf="@+id/radio_both"
+                            android:gravity="right"
+                            android:text="@string/both_text"
+                            android:textColor="@color/nearBlack"
+                            android:textSize="@dimen/dimen_16sp"
+                            app:face="@string/font_malgun_semi_light" />
+
+                        <com.tnedicca.routewise.views.CustomRadioButton
+                            android:id="@+id/radio_both"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view5"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dimen_1dp"
+                android:layout_marginLeft="@dimen/dimen_10dp"
+                android:layout_marginRight="@dimen/dimen_10dp"
+                android:layout_marginTop="@dimen/dimen_5dp"
+                android:background="@color/battleshipGrey" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/dimen_10dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="@dimen/dimen_0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".15" />
+
+                <com.tnedicca.routewise.views.CustomButton
+                    android:id="@+id/reset_password_button"
+                    android:layout_width="@dimen/dimen_0dp"
+                    android:layout_height="@dimen/dimen_40dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight=".7"
+                    android:background="@drawable/login_button_shape"
+                    android:gravity="center"
+                    android:text="@string/reset_password"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dimen_16sp"
+                    app:face="@string/font_malgun_semi_light" />
+
+                <LinearLayout
+                    android:layout_width="@dimen/dimen_0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".15" />
+
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view6"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dimen_1dp"
+                android:layout_marginLeft="@dimen/dimen_10dp"
+                android:layout_marginRight="@dimen/dimen_10dp"
+                android:background="@color/battleshipGrey" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/dimen_10dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="@dimen/dimen_0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".15" />
+
+                <com.tnedicca.routewise.views.CustomButton
+                    android:id="@+id/save_logs_button"
+                    android:layout_width="@dimen/dimen_0dp"
+                    android:layout_height="@dimen/dimen_40dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight=".7"
+                    android:background="@drawable/login_button_shape"
+                    android:gravity="center"
+                    android:text="@string/save_log"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dimen_16sp"
+                    app:face="@string/font_malgun_semi_light" />
+
+                <LinearLayout
+                    android:layout_width="@dimen/dimen_0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".15" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dimen_safe_route_card_height"
+    android:layout_marginBottom="@dimen/dimen_5dp"
+    android:layout_marginTop="@dimen/dimen_5dp"
+    app:cardBackgroundColor="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:padding="@dimen/dimen_3dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/border">
+
+        <com.android.volley.toolbox.NetworkImageView
+            android:id="@+id/map"
+            android:layout_width="@dimen/dimen_safe_route_map"
+            android:layout_height="@dimen/dimen_safe_route_map"
+            android:layout_centerVertical="true"
+            android:src="@drawable/map_example" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dimen_safe_route_marginLeft"
+            android:layout_toLeftOf="@+id/risk_layout"
+            android:layout_toRightOf="@+id/map">
+
+            <com.tnedicca.routewise.views.CustomTextView
+                android:id="@+id/trip_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:singleLine="true"
+                android:layout_marginTop="@dimen/dimen_5dp"
+                android:layout_marginBottom="@dimen/dimen_safe_route_marginBottom"
+                android:layout_marginLeft="@dimen/dimen_5dp"
+                android:layout_marginRight="@dimen/dimen_5dp"
+                android:text="Route A"
+                android:textColor="@color/battleshipGrey"
+                android:textSize="@dimen/dimen_trip_name_textsize"
+                app:face="@string/font_malgun_semi_light" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/dimen_safe_route_marginBottom">
+
+                <com.tnedicca.routewise.views.CustomTextView
+                    android:id="@+id/distance_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="Distance: "
+                    android:textColor="@color/nearBlack"
+                    android:textSize="@dimen/dimen_safe_route_card_distance"
+                    app:face="@string/font_malgun_semi_light" />
+
+                <com.tnedicca.routewise.views.CustomTextView
+                    android:id="@+id/distance_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/time_value"
+                    android:layout_toRightOf="@+id/distance_label"
+                    android:text="16 miles"
+                    android:textColor="@color/nearBlack"
+                    android:textSize="@dimen/dimen_safe_route_card_distance"
+                    app:face="@string/font_malgun_semi_light" />
+
+                <com.tnedicca.routewise.views.CustomTextView
+                    android:id="@+id/time_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/distance_label"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="Travel Time: "
+                    android:textColor="@color/nearBlack"
+                    android:textSize="@dimen/dimen_safe_route_card_travel_time"
+                    app:face="@string/font_malgun_semi_light" />
+
+                <com.tnedicca.routewise.views.CustomTextView
+                    android:id="@+id/time_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/distance_label"
+                    android:layout_marginLeft="@dimen/dimen_5dp"
+                    android:layout_toRightOf="@+id/time_label"
+                    android:text="23 minutes"
+                    android:textColor="@color/nearBlack"
+                    android:textSize="@dimen/dimen_safe_route_card_travel_time"
+                    app:face="@string/font_malgun_semi_light" />
+
+                <com.tnedicca.routewise.views.CustomTextView
+                    android:id="@+id/route_risk_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/time_label"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="Route Risk: "
+                    android:textColor="@color/nearBlack"
+                    android:textSize="@dimen/dimen_safe_route_card_route_risk"
+                    app:face="@string/font_malgun_semi_light" />
+
+                <com.tnedicca.routewise.views.CustomTextView
+                    android:id="@+id/route_risk_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/time_value"
+                    android:layout_below="@+id/time_label"
+                    android:layout_toRightOf="@+id/route_risk_label"
+                    android:text="6.5"
+                    android:textColor="@color/nearBlack"
+                    android:textSize="@dimen/dimen_safe_route_card_route_risk"
+                    app:face="@string/font_malgun_semi_light" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/risk_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true">
+
+            <ImageView
+                android:id="@+id/safe_image"
+                android:layout_width="@dimen/dimen_30dp"
+                android:layout_height="@dimen/dimen_30dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/risk_score_circle" />
+
+            <com.tnedicca.routewise.views.CustomTextView
+                android:id="@+id/safe_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/dimen_safe_route_text"
+                android:text="Safest Choice"
+                android:textColor="@color/battleshipGrey"
+                android:textSize="@dimen/dimen_safe_text_textsize"
+                app:face="@string/font_malgun_semi_light" />
+        </RelativeLayout>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

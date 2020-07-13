@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dimen_80dp"
+    android:background="@color/white"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/dimen_minus_5dp"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <com.tnedicca.routewise.views.CustomTextView
+        android:id="@+id/header_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:paddingBottom="@dimen/dimen_16dp"
+        android:paddingLeft="@dimen/dimen_10dp"
+        android:paddingTop="@dimen/dimen_16dp"
+        android:textSize="@dimen/dimen_25sp"
+        android:text="MENU"
+        android:textColor="@color/black" />
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/header_text"
+        android:background="@android:color/darker_gray" />
+
+</LinearLayout>

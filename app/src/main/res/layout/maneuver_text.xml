@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:padding="@dimen/dimen_10dp">
+
+    <ImageView
+        android:id="@+id/maneuver_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:padding="@dimen/dimen_10dp"
+        android:src="@drawable/ic_turn_left" />
+
+    <com.tnedicca.routewise.views.CustomTextView
+        android:id="@+id/navigation_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/dimen_10dp"
+        android:layout_marginRight="@dimen/dimen_10dp"
+        android:layout_toRightOf="@+id/maneuver_image"
+        android:text="duration"
+        android:textColor="@color/black"
+        android:textSize="@dimen/dimen_18sp"
+        app:face="@string/font_malgun_semi_light" />
+
+</RelativeLayout>

@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/header"
+        layout="@layout/actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_5dp" />
+
+    <LinearLayout
+        android:id="@+id/mainLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_5dp"
+            android:layout_marginLeft="@dimen/dimen_10dp"
+            android:layout_marginRight="@dimen/dimen_10dp"
+            android:layout_marginTop="@dimen/dimen_10dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".4"
+                android:orientation="vertical">
+
+                <com.tnedicca.routewise.views.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:text="@string/route_risk_score"
+                    android:textColor="@color/nearBlack"
+                    android:textSize="@dimen/dimen_risk_score_text"
+                    app:face="@string/font_malgun_semi_light" />
+
+                <com.tnedicca.routewise.views.CustomTextView
+                    android:id="@+id/route_risk_score"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:text="@string/route_risk_score"
+                    android:textColor="@color/nearBlack"
+                    android:textSize="@dimen/dimen_risk_score"
+                    app:face="@string/font_malgun_semi_light" />
+            </LinearLayout>
+            <!--<LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="30"
+                android:orientation="vertical">
+                <com.tnedicca.routewise.views.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:text="@string/driving_score"
+                    android:textSize="16sp"
+                    app:face="@string/font_malgun_semi_light"
+                    android:textColor="@color/nearBlack"/>
+                <com.tnedicca.routewise.views.CustomTextView
+                    android:id="@+id/driving_score"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:text="@string/driving_score"
+                    android:textSize="16sp"
+                    app:face="@string/font_malgun_semi_light"
+                    android:textColor="@color/nearBlack"/>
+            </LinearLayout>-->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/dimen_distance_layout_padding_left">
+
+                <com.tnedicca.routewise.views.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:text="@string/distance"
+                    android:textColor="@color/nearBlack"
+                    android:textSize="@dimen/dimen_distance_text"
+                    app:face="@string/font_malgun_semi_light" />
+
+                <com.tnedicca.routewise.views.CustomTextView
+                    android:id="@+id/distance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:text="@string/distance"
+                    android:textColor="@color/nearBlack"
+                    android:textSize="@dimen/dimen_distance"
+                    app:face="@string/font_malgun_semi_light" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <fragment
+                    android:id="@+id/map"
+                    android:name="com.tnedicca.routewise.fragments.CustomMapFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_detailed_view_map_height" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dimen_detailed_view_duration_marginBottom"
+                    android:layout_marginLeft="@dimen/dimen_detailed_view_duration_marginLeft"
+                    android:layout_marginRight="@dimen/dimen_detailed_view_duration_marginRight"
+                    android:layout_marginTop="@dimen/dimen_detailed_view_duration_marginTop"
+                    android:orientation="horizontal">
+
+                    <com.tnedicca.routewise.views.CustomTextView
+                        android:layout_width="@dimen/dimen_0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".5"
+                        android:gravity="end"
+                        android:text="Duration - "
+                        android:textColor="@color/battleshipGrey"
+                        android:textSize="@dimen/dimen_detailed_view_duration_text"
+                        app:face="@string/font_malgun_semi_light" />
+
+                    <com.tnedicca.routewise.views.CustomTextView
+                        android:id="@+id/duration"
+                        android:layout_width="@dimen/dimen_0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:layout_weight=".5"
+                        android:text="Duration"
+                        android:textColor="@color/battleshipGrey"
+                        android:textSize="@dimen/dimen_detailed_view_duration_text"
+                        app:face="@string/font_malgun_semi_light" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dimen_detailed_view_start_point_margin"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/dimen_detailed_view_dot_width"
+                        android:layout_height="@dimen/dimen_detailed_view_dot_height"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="@dimen/dimen_detailed_view_dot_marginRight"
+                        android:layout_marginTop="@dimen/dimen_detailed_view_dot_marginTop"
+                        android:padding="@dimen/dimen_detailed_view_dot_padding"
+                        android:src="@drawable/green_bullet" />
+
+                    <com.tnedicca.routewise.views.CustomTextView
+                        android:id="@+id/start_point"
+                        android:layout_width="@dimen/dimen_0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".5"
+                        android:text="Start:"
+                        android:textColor="@color/nearBlack"
+                        android:textSize="@dimen/dimen_detailed_view_start_point_textSize"
+                        app:face="@string/font_malgun_semi_light" />
+
+                    <com.tnedicca.routewise.views.CustomTextView
+                        android:id="@+id/start_time"
+                        android:layout_width="@dimen/dimen_0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight=".2"
+                        android:gravity="end"
+                        android:text="time"
+                        android:textColor="@color/battleshipGrey"
+                        android:textSize="@dimen/dimen_detailed_view_start_point_textSize"
+                        app:face="@string/font_malgun_semi_light" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dimen_detailed_view_end_point_margin"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/dimen_detailed_view_dot_width"
+                        android:layout_height="@dimen/dimen_detailed_view_dot_height"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="@dimen/dimen_detailed_view_dot_marginRight"
+                        android:layout_marginTop="@dimen/dimen_detailed_view_dot_marginTop"
+                        android:padding="@dimen/dimen_detailed_view_dot_padding"
+                        android:src="@drawable/red_bullet" />
+
+                    <com.tnedicca.routewise.views.CustomTextView
+                        android:id="@+id/end_point"
+                        android:layout_width="@dimen/dimen_0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".5"
+                        android:text="End"
+                        android:textColor="@color/nearBlack"
+                        android:textSize="@dimen/dimen_detailed_view_end_point_textSize"
+                        app:face="@string/font_malgun_semi_light" />
+
+                    <com.tnedicca.routewise.views.CustomTextView
+                        android:id="@+id/stop_time"
+                        android:layout_width="@dimen/dimen_0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight=".2"
+                        android:gravity="end"
+                        android:text="time"
+                        android:textColor="@color/battleshipGrey"
+                        android:textSize="@dimen/dimen_detailed_view_end_point_textSize"
+                        app:face="@string/font_malgun_semi_light" />
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/view1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/dimen_1dp"
+                    android:layout_marginBottom="@dimen/dimen_5dp"
+                    android:layout_marginLeft="@dimen/dimen_10dp"
+                    android:layout_marginRight="@dimen/dimen_10dp"
+                    android:layout_marginTop="@dimen/dimen_5dp"
+                    android:background="@color/nearBlack" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_10dp"
+                    android:layout_marginRight="@dimen/dimen_10dp"
+                    android:orientation="horizontal">
+
+                    <com.tnedicca.routewise.views.CustomTextView
+                        android:id="@+id/driver_of_trip_text"
+                        android:layout_width="@dimen/dimen_0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="@dimen/dimen_0dp"
+                        android:layout_weight=".8"
+                        android:text="@string/driver_of_trip"
+                        android:textColor="@color/nearBlack"
+                        android:textSize="@dimen/dimen_detailed_view_driver_of_trip_textSize"
+                        app:face="@string/font_malgun_semi_light" />
+
+                    <com.kyleduo.switchbutton.SwitchButton
+                        android:id="@+id/driver_of_trip_switch"
+                        style="@style/SwitchButtonStyle"
+                        android:layout_width="@dimen/dimen_0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".2"
+                        android:checked="true"
+                        android:gravity="end"
+                        app:kswBackDrawable="@drawable/miui_back_drawable"
+                        app:kswBackMeasureRatio="1.7"
+                        app:kswThumbDrawable="@drawable/miui_thumb_drawable"
+                        app:kswThumbHeight="@dimen/dimen_18dp"
+                        app:kswThumbWidth="@dimen/dimen_18dp" />
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/view2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/dimen_1dp"
+                    android:layout_marginBottom="@dimen/dimen_5dp"
+                    android:layout_marginLeft="@dimen/dimen_10dp"
+                    android:layout_marginRight="@dimen/dimen_10dp"
+                    android:layout_marginTop="@dimen/dimen_5dp"
+                    android:background="@color/nearBlack" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/dimen_10dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="@dimen/dimen_0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".1" />
+
+                    <com.tnedicca.routewise.views.CustomButton
+                        android:id="@+id/suggest_safe_route_button"
+                        android:layout_width="@dimen/dimen_0dp"
+                        android:layout_height="@dimen/dimen_40dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_weight=".8"
+                        android:background="@drawable/login_button_shape"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:text="@string/suggest_safe_route"
+                        android:textSize="@dimen/dimen_16sp"
+                        android:textColor="@color/white"
+                        app:face="@string/font_malgun_semi_light" />
+
+                    <LinearLayout
+                        android:layout_width="@dimen/dimen_0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".1" />
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </ScrollView>
+    </LinearLayout>
+
+</LinearLayout>

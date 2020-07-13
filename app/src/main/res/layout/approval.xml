@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <include
+        android:id="@+id/header"
+        layout="@layout/actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="@dimen/dimen_5dp" />
+
+    <com.tnedicca.routewise.views.CustomTextView
+        android:id="@+id/enterCodeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dimen_100dp"
+        android:gravity="center"
+        android:padding="@dimen/dimen_10dp"
+        android:text="@string/approval_text"
+        android:textColor="@color/nearBlack"
+        android:textSize="@dimen/dimen_20sp"
+        app:face="@string/font_malgun_semi_light" />
+
+    <com.tnedicca.routewise.views.CustomEditTextView
+        android:id="@+id/codeEditText"
+        android:layout_width="@dimen/dimen_200dp"
+        android:layout_height="@dimen/dimen_40dp"
+        android:layout_below="@+id/enterCodeTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dimen_20dp"
+        android:background="@drawable/edit_text_shape"
+        android:gravity="center_horizontal|center_vertical"
+        android:hint="@string/approval_hint"
+        android:inputType="number"
+        android:maxLength="6"
+        android:textColor="@color/nearBlack"
+        android:textColorHint="@color/battleshipGrey"
+        android:textSize="@dimen/dimen_16sp"
+        app:face="@string/font_malgun_semi_light" />
+
+    <com.tnedicca.routewise.views.CustomTextView
+        android:id="@+id/inCorrectCodeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/codeEditText"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="@dimen/dimen_25dp"
+        android:gravity="center"
+        android:padding="@dimen/dimen_10dp"
+        android:text="@string/incorrect_code_text"
+        android:textColor="@color/nearBlack"
+        android:textSize="@dimen/dimen_20sp"
+        app:face="@string/font_malgun_semi_light" />
+
+    <com.tnedicca.routewise.views.CustomButton
+        android:id="@+id/code_request_button"
+        android:layout_width="@dimen/dimen_200dp"
+        android:layout_height="@dimen/dimen_40dp"
+        android:layout_alignLeft="@+id/codeEditText"
+        android:layout_alignStart="@+id/codeEditText"
+        android:layout_below="@+id/inCorrectCodeTextView"
+        android:layout_marginTop="@dimen/dimen_21dp"
+        android:background="@drawable/login_button_shape"
+        android:text="@string/request_new_code"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dimen_15sp"
+        app:face="@string/font_malgun_semi_light" />
+</RelativeLayout>

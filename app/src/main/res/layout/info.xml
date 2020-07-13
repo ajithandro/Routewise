@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <include
+        android:id="@+id/header"
+        layout="@layout/actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="@dimen/dimen_5dp" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header"
+        android:fillViewport="true"
+        android:padding="@dimen/dimen_info_scrollview_padding">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.tnedicca.routewise.views.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_10dp"
+                android:text="@string/info_title1"
+                android:textColor="@color/black"
+                android:textSize="@dimen/dimen_20sp"
+                app:face="@string/font_malgun" />
+
+            <com.tnedicca.routewise.views.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_40dp"
+                android:text="@string/info_factor1"
+                android:textColor="@color/battleshipGrey"
+                android:textSize="@dimen/dimen_20sp"
+                app:face="@string/font_malgun_semi_light" />
+
+            <com.tnedicca.routewise.views.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_40dp"
+                android:text="@string/info_factor2"
+                android:textColor="@color/battleshipGrey"
+                android:textSize="@dimen/dimen_20sp"
+                app:face="@string/font_malgun_semi_light" />
+
+            <com.tnedicca.routewise.views.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_40dp"
+                android:text="@string/info_factor3"
+                android:textColor="@color/battleshipGrey"
+                android:textSize="@dimen/dimen_20sp"
+                app:face="@string/font_malgun_semi_light" />
+
+            <com.tnedicca.routewise.views.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_40dp"
+                android:text="@string/info_factor4"
+                android:textColor="@color/battleshipGrey"
+                android:textSize="@dimen/dimen_20sp"
+                app:face="@string/font_malgun_semi_light" />
+
+            <com.tnedicca.routewise.views.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_40dp"
+                android:text="@string/info_factor5"
+                android:textColor="@color/battleshipGrey"
+                android:textSize="@dimen/dimen_20sp"
+                app:face="@string/font_malgun_semi_light" />
+
+            <com.tnedicca.routewise.views.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_20dp"
+                android:text="@string/info_title2"
+                android:textColor="@color/black"
+                android:textSize="@dimen/dimen_20sp"
+                app:face="@string/font_malgun" />
+
+            <com.tnedicca.routewise.views.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_20dp"
+                android:layout_marginBottom="@dimen/dimen_10dp"
+                android:text="@string/info_title3"
+                android:textColor="@color/black"
+                android:textSize="@dimen/dimen_20sp"
+                app:face="@string/font_malgun" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_20dp"
+                android:layout_marginBottom="@dimen/dimen_5dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/dimen_40dp"
+                    android:layout_height="@dimen/dimen_40dp"
+                    android:layout_gravity="center_vertical"
+                    android:padding="@dimen/dimen_3dp"
+                    android:src="@drawable/ic_noerroricon" />
+
+                <com.tnedicca.routewise.views.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/info_tips1"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/dimen_20sp"
+                    app:face="@string/font_malgun_semi_light" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_20dp"
+                android:layout_marginBottom="@dimen/dimen_5dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/dimen_40dp"
+                    android:layout_height="@dimen/dimen_40dp"
+                    android:layout_gravity="center_vertical"
+                    android:padding="@dimen/dimen_3dp"
+                    android:src="@drawable/ic_noerroricon" />
+
+                <com.tnedicca.routewise.views.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/info_tips2"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/dimen_20sp"
+                    app:face="@string/font_malgun_semi_light" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_20dp"
+                android:layout_marginBottom="@dimen/dimen_5dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/dimen_40dp"
+                    android:layout_height="@dimen/dimen_40dp"
+                    android:layout_gravity="center_vertical"
+                    android:padding="@dimen/dimen_3dp"
+                    android:src="@drawable/ic_noerroricon" />
+
+                <com.tnedicca.routewise.views.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/info_tips3"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/dimen_20sp"
+                    app:face="@string/font_malgun_semi_light" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_20dp"
+                android:layout_marginBottom="@dimen/dimen_5dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/dimen_40dp"
+                    android:layout_height="@dimen/dimen_40dp"
+                    android:layout_gravity="center_vertical"
+                    android:padding="@dimen/dimen_3dp"
+                    android:src="@drawable/ic_noerroricon" />
+
+                <com.tnedicca.routewise.views.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/info_tips4"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/dimen_20sp"
+                    app:face="@string/font_malgun_semi_light" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_20dp"
+                android:layout_marginBottom="@dimen/dimen_5dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/dimen_40dp"
+                    android:layout_height="@dimen/dimen_40dp"
+                    android:layout_gravity="center_vertical"
+                    android:padding="@dimen/dimen_3dp"
+                    android:src="@drawable/ic_noerroricon" />
+
+                <com.tnedicca.routewise.views.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/info_tips5"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/dimen_20sp"
+                    app:face="@string/font_malgun_semi_light" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

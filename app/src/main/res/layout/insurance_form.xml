@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <include
+        android:id="@+id/header"
+        layout="@layout/actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="@dimen/dimen_5dp" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/header"
+        android:layout_margin="@dimen/dimen_10dp"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal">
+
+            <LinearLayout
+                android:id="@+id/form"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <fragment
+                    android:id="@+id/first_name_view"
+                    android:name="com.tnedicca.routewise.fragments.FragmentView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal|center_vertical"
+                    tools:layout="@layout/fragment_layout" />
+
+                <fragment
+                    android:id="@+id/last_name_view"
+                    android:name="com.tnedicca.routewise.fragments.FragmentView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal|center_vertical"
+                    tools:layout="@layout/fragment_layout" />
+
+                <fragment
+                    android:id="@+id/age_view"
+                    android:name="com.tnedicca.routewise.fragments.FragmentView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal|center_vertical"
+                    tools:layout="@layout/fragment_layout" />
+
+                <fragment
+                    android:id="@+id/phone_number_view"
+                    android:name="com.tnedicca.routewise.fragments.FragmentView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal|center_vertical"
+                    tools:layout="@layout/fragment_layout" />
+
+                <fragment
+                    android:id="@+id/email_address_view"
+                    android:name="com.tnedicca.routewise.fragments.FragmentView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal|center_vertical"
+                    tools:layout="@layout/fragment_layout" />
+
+                <fragment
+                    android:id="@+id/garaging_address_view"
+                    android:name="com.tnedicca.routewise.fragments.FragmentView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal|center_vertical"
+                    tools:layout="@layout/fragment_layout" />
+            </LinearLayout>
+
+            <com.tnedicca.routewise.views.CustomWebView
+                android:id="@+id/agreement_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/form"
+                android:layout_gravity="fill_horizontal"
+                android:paddingLeft="@dimen/dimen_2dp"
+                android:paddingRight="@dimen/dimen_6dp"
+                android:paddingTop="@dimen/dimen_5dp"
+                android:textSize="@dimen/dimen_10sp"
+                app:face="@string/font_malgun_semi_light"
+                app:justify="true"
+                app:textColor="@color/black" />
+
+            <ProgressBar
+                android:id="@+id/progress"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/bottom_layout"
+                android:layout_below="@+id/form"
+                android:layout_centerHorizontal="true"
+                android:progressDrawable="@drawable/progressbar" />
+
+            <LinearLayout
+                android:id="@+id/bottom_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/insurance_form_bottom_layout_height"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@+id/agreement_view"
+                android:orientation="horizontal">
+
+                <com.tnedicca.routewise.views.CustomButton
+                    android:id="@+id/cancel_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_40dp"
+                    android:layout_marginBottom="@dimen/dimen_3dp"
+                    android:layout_marginLeft="@dimen/dimen_5dp"
+                    android:layout_marginRight="@dimen/dimen_5dp"
+                    android:layout_marginTop="@dimen/dimen_3dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/login_button_shape"
+                    android:text="@string/cancel"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dimen_15sp"
+                    app:face="@string/font_malgun_semi_light" />
+
+                <com.tnedicca.routewise.views.CustomButton
+                    android:id="@+id/submit_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_40dp"
+                    android:layout_marginBottom="@dimen/dimen_3dp"
+                    android:layout_marginEnd="@dimen/dimen_5dp"
+                    android:layout_marginRight="@dimen/dimen_5dp"
+                    android:layout_marginTop="@dimen/dimen_3dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/login_button_shape"
+                    android:text="@string/submit"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dimen_15sp"
+                    app:face="@string/font_malgun_semi_light" />
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

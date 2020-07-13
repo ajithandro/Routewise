@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        android:padding="@dimen/dimen_help_padding">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/version_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_help_marginBottom"
+                android:layout_marginRight="@dimen/dimen_help_marginRight"
+                android:layout_marginTop="@dimen/dimen_help_marginTop"
+                android:orientation="horizontal">
+
+                <com.tnedicca.routewise.views.CustomTextView
+                    android:id="@+id/version_number_heading"
+                    android:layout_width="@dimen/dimen_0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:padding="@dimen/dimen_help_padding"
+                    android:text="@string/version_number"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/dimen_14sp"
+                    app:face="@string/font_malgun_bold" />
+
+                <com.tnedicca.routewise.views.CustomTextView
+                    android:id="@+id/version_number_colon"
+                    android:layout_width="@dimen/dimen_0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.10"
+                    android:padding="@dimen/dimen_help_padding"
+                    android:text="@string/colon"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/dimen_14sp"
+                    app:face="@string/font_malgun_semi_light" />
+
+                <com.tnedicca.routewise.views.CustomTextView
+                    android:id="@+id/version_number_text"
+                    android:layout_width="@dimen/dimen_0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.50"
+                    android:gravity="left"
+                    android:padding="@dimen/dimen_help_padding"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/dimen_14sp"
+                    app:face="@string/font_malgun_semi_light" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/build_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_help_marginBottom"
+                android:layout_marginRight="@dimen/dimen_help_marginRight"
+                android:layout_marginTop="@dimen/dimen_help_marginTop"
+                android:orientation="horizontal">
+
+                <com.tnedicca.routewise.views.CustomTextView
+                    android:id="@+id/build_number_heading"
+                    android:layout_width="@dimen/dimen_0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:padding="@dimen/dimen_help_padding"
+                    android:text="@string/build_number"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/dimen_14sp"
+                    app:face="@string/font_malgun_bold" />
+
+                <com.tnedicca.routewise.views.CustomTextView
+                    android:id="@+id/build_number_colon"
+                    android:layout_width="@dimen/dimen_0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.1"
+                    android:padding="@dimen/dimen_help_padding"
+                    android:text="@string/colon"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/dimen_14sp"
+                    app:face="@string/font_malgun_semi_light" />
+
+                <com.tnedicca.routewise.views.CustomTextView
+                    android:id="@+id/build_number_text"
+                    android:layout_width="@dimen/dimen_0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:padding="@dimen/dimen_help_padding"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/dimen_14sp"
+                    app:face="@string/font_malgun_semi_light" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/contact_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_help_marginBottom"
+                android:layout_marginRight="@dimen/dimen_help_marginRight"
+                android:layout_marginTop="@dimen/dimen_help_marginTop"
+                android:orientation="horizontal">
+
+                <com.tnedicca.routewise.views.CustomTextView
+                    android:id="@+id/contact_info_heading"
+                    android:layout_width="@dimen/dimen_0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:padding="@dimen/dimen_help_padding"
+                    android:text="@string/contact_info"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/dimen_14sp"
+                    app:face="@string/font_malgun_bold" />
+
+                <com.tnedicca.routewise.views.CustomTextView
+                    android:id="@+id/contact_info_colon"
+                    android:layout_width="@dimen/dimen_0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.1"
+                    android:padding="@dimen/dimen_help_padding"
+                    android:text="@string/colon"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/dimen_14sp"
+                    app:face="@string/font_malgun_semi_light" />
+
+                <com.tnedicca.routewise.views.CustomTextView
+                    android:id="@+id/contact_info_text"
+                    android:layout_width="@dimen/dimen_0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:gravity="start"
+                    android:padding="@dimen/dimen_help_padding"
+                    android:text="@string/contact_info_text"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/dimen_14sp"
+                    app:face="@string/font_malgun_semi_light" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

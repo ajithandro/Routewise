@@ -1,0 +1,57 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimaryDark">@color/white</item>
+        <item name="colorAccent">@color/blue</item>
+        <item name="android:windowBackground">@color/white</item>
+        <item name="android:colorBackground">@android:color/white</item>
+    </style>
+
+    <style name="SplashTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@color/white</item>
+        <item name="android:windowDisablePreview">true</item>
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimaryDark">@color/white</item>
+        <item name="colorAccent">@color/blue</item>
+        <item name="android:colorBackground">@android:color/white</item>
+    </style>
+
+    <!-- Switch Button Theme. -->
+    <style name="SwitchButtonStyle">
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:paddingTop">6dp</item>
+        <item name="android:paddingBottom">6dp</item>
+    </style>
+    <!--
+        &lt;!&ndash; Radio Button Theme. &ndash;&gt;
+        <style name="radiobutton" parent="Base.Widget.AppCompat.CompoundButton.RadioButton">
+            <item name="android:button">@drawable/radiobutton_drawable</item>
+            <item name="android:windowIsTranslucent">true</item>
+            <item name="android:windowBackground">@android:color/transparent</item>
+            <item name="android:windowContentOverlay">@null</item>
+            <item name="android:windowNoTitle">true</item>
+            <item name="android:windowIsFloating">false</item>
+            <item name="android:backgroundDimEnabled">true</item>
+        </style>
+        <style name="MyRadioButton"  parent="Base.Widget.AppCompat.CompoundButton.RadioButton">
+            <item name="colorControlNormal">@color/blue</item>
+            <item name="colorControlActivated">@color/blue</item>
+            <item name="colorAccent">@color/blue</item>
+            <item name="colorButtonNormal">@color/blue</item>
+        </style>
+    -->
+
+    <!-- No Action Bar Theme. -->
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+</resources>

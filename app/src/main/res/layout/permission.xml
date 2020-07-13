@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/parentlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/routewiseImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/dimen_10dp"
+        android:layout_marginRight="@dimen/dimen_10dp"
+        android:layout_marginTop="@dimen/dimen_20dp"
+        android:src="@drawable/app_logo" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/routewiseImage"
+        android:layout_margin="@dimen/dimen_10dp"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/routewiseImage"
+            android:layout_marginTop="@dimen/dimen_0dp">
+
+            <ImageView
+                android:id="@+id/app_logo"
+                android:layout_width="@dimen/dimen_148dp"
+                android:layout_height="@dimen/dimen_168dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/dimen_10dp"
+                android:layout_marginLeft="@dimen/dimen_30dp" />
+
+            <RelativeLayout
+                android:id="@+id/start_up_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/app_logo"
+                android:layout_marginLeft="@dimen/dimen_50dp"
+                android:layout_marginRight="@dimen/dimen_50dp">
+
+                <com.tnedicca.routewise.views.CustomTextView
+                    android:id="@+id/explore"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="This is a critical permission for the app to work properly. Kindly choose allow."
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/dimen_22sp"
+                    app:face="@string/font_malgun_semi_light" />
+
+                <com.tnedicca.routewise.views.CustomTextView
+                    android:id="@+id/travel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/explore"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/dimen_20dp"
+                    android:gravity="center"
+                    android:text="Kindly choose allow all the time to access your location."
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/dimen_24sp"
+                    app:face="@string/font_malgun_bold" />
+            </RelativeLayout>
+
+            <com.tnedicca.routewise.views.CustomButton
+                android:id="@+id/start_button"
+                android:layout_width="@dimen/dimen_170dp"
+                android:layout_height="@dimen/dimen_45dp"
+                android:layout_below="@+id/start_up_layout"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dimen_20dp"
+                android:background="@drawable/button_start"
+                android:onClick="allow"
+                android:text="Allow"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dimen_16sp"
+                app:face="@string/font_malgun_bold" />
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

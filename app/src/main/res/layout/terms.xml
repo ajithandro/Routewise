@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <include
+        android:id="@+id/header"
+        layout="@layout/actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="@dimen/dimen_5dp" />
+
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header"
+        android:layout_centerHorizontal="true"
+        android:progressDrawable="@drawable/progressbar" />
+
+    <ScrollView
+        android:id="@+id/top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottom_layout"
+        android:layout_below="@+id/header"
+        android:paddingLeft="@dimen/dimen_10dp"
+        android:paddingRight="@dimen/dimen_10dp"
+        android:paddingTop="@dimen/dimen_5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.tnedicca.routewise.views.CustomWebView
+                android:id="@+id/terms_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill_horizontal"
+                android:paddingLeft="@dimen/dimen_2dp"
+                android:paddingRight="@dimen/dimen_6dp"
+                app:face="@string/font_malgun_semi_light"
+                app:justify="true"
+                app:textColor="@color/black"
+                app:textSize="@dimen/dimen_20sp" />
+
+            <com.tnedicca.routewise.views.CustomWebView
+                android:id="@+id/drive_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill_horizontal"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:paddingLeft="@dimen/dimen_2dp"
+                android:paddingRight="@dimen/dimen_6dp"
+                app:face="@string/font_malgun_semi_light"
+                app:justify="true"
+                app:textColor="@color/black"
+                app:textSize="@dimen/dimen_20sp" />
+
+            <com.tnedicca.routewise.views.CustomWebView
+                android:id="@+id/share_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill_horizontal"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:paddingLeft="@dimen/dimen_2dp"
+                android:paddingRight="@dimen/dimen_6dp"
+                app:face="@string/font_malgun_semi_light"
+                app:justify="true"
+                app:textColor="@color/black"
+                app:textSize="@dimen/dimen_20sp" />
+
+            <com.tnedicca.routewise.views.CustomWebView
+                android:id="@+id/incure_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill_horizontal"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:paddingLeft="@dimen/dimen_2dp"
+                android:paddingRight="@dimen/dimen_6dp"
+                app:face="@string/font_malgun_semi_light"
+                app:justify="true"
+                app:textColor="@color/black"
+                app:textSize="@dimen/dimen_20sp" />
+
+            <com.tnedicca.routewise.views.CustomWebView
+                android:id="@+id/liab_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill_horizontal"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:paddingLeft="@dimen/dimen_2dp"
+                android:paddingRight="@dimen/dimen_6dp"
+                app:face="@string/font_malgun_semi_light"
+                app:justify="true"
+                app:textColor="@color/black"
+                app:textSize="@dimen/dimen_20sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <com.tnedicca.routewise.views.CustomButton
+            android:id="@+id/decline"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_40dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dimen_10dp"
+            android:layout_marginRight="@dimen/dimen_10dp"
+            android:layout_weight="1"
+            android:background="@drawable/login_button_shape"
+            android:text="@string/decline"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dimen_15sp"
+            app:face="@string/font_malgun_semi_light" />
+
+        <com.tnedicca.routewise.views.CustomButton
+            android:id="@+id/accept"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_40dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="@dimen/dimen_10dp"
+            android:layout_marginRight="@dimen/dimen_10dp"
+            android:layout_weight="1"
+            android:background="@drawable/login_button_shape"
+            android:text="@string/accept"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dimen_15sp"
+            app:face="@string/font_malgun_semi_light" />
+
+    </LinearLayout>
+
+</RelativeLayout>

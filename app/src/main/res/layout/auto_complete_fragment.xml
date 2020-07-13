@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <com.tnedicca.routewise.views.CustomTextView
+        android:id="@+id/error_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/routewiseImage"
+        android:layout_centerHorizontal="true"
+        android:text="@string/login_error"
+        android:textColor="@color/red"
+        android:textSize="@dimen/dimen_12sp"
+        app:face="@string/font_malgun_semi_light" />
+
+    <ImageView
+        android:id="@+id/validation_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/edit_text"
+        android:layout_marginEnd="@dimen/dimen_21dp"
+        android:layout_marginRight="@dimen/dimen_21dp"
+        android:src="@drawable/ic_erroricon" />
+
+    <com.tnedicca.routewise.views.FieldTextView
+        android:id="@+id/edit_text"
+        android:layout_width="@dimen/dimen_200dp"
+        android:layout_height="@dimen/dimen_200dp"
+        android:layout_below="@+id/error_msg"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/textview_shape"
+        android:gravity="center_horizontal|center_vertical"
+        android:hint="@string/email"
+        android:maxLines="1"
+        android:scrollHorizontally="true"
+        app:face="@string/font_malgun_semi_light" />
+
+</RelativeLayout>

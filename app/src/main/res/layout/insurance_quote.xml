@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.tnedicca.routewise.views.CustomWebView
+        android:id="@+id/quote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottom_layout"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="fill_horizontal"
+        android:paddingLeft="@dimen/dimen_insurance_quote_paddingLeft"
+        android:paddingRight="@dimen/dimen_insurance_quote_paddingRight"
+        app:face="@string/font_malgun_semi_light"
+        app:justify="true"
+        app:textColor="@color/black"
+        app:textSize="@dimen/dimen_20sp" />
+
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:progressDrawable="@drawable/progressbar" />
+
+    <LinearLayout
+        android:id="@+id/bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_insurance_quote_bottom_layout_height"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <com.tnedicca.routewise.views.CustomButton
+            android:id="@+id/no_thanks_button"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_40dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dimen_5dp"
+            android:layout_marginRight="@dimen/dimen_5dp"
+            android:layout_weight="1"
+            android:background="@drawable/login_button_shape"
+            android:text="@string/no_thanks_text"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dimen_15sp"
+            app:face="@string/font_malgun_semi_light" />
+
+        <com.tnedicca.routewise.views.CustomButton
+            android:id="@+id/continue_button"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_40dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="@dimen/dimen_5dp"
+            android:layout_marginRight="@dimen/dimen_5dp"
+            android:layout_weight="1"
+            android:background="@drawable/login_button_shape"
+            android:text="@string/continue_text"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dimen_15sp"
+            app:face="@string/font_malgun_semi_light" />
+
+    </LinearLayout>
+
+</RelativeLayout>
